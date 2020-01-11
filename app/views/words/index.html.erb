@@ -94,12 +94,15 @@
     <tbody>
       <% @words.each do |word| %>
         <tr>
-          <td></td>
-          <td></td>
           <td><%= word.japanese_word %></td>
           <td><%= word.english_word %></td>
+          <td><%= word.manualKind %></td>
+          <td><%= word.concreteMethod %></td>
           <td><%= word.use %></td>
-          <td><a href="" class="btn btn-outline-dark mb-2">編集</a></td>
+          <td><%= link_to '編集', 
+                  edit_word_path(word),
+                  class: 'btn btn-outline-dark mb-2'
+              %></td>
           <td><%= link_to '削除', 
                   word,
                   class: 'btn btn-outline-danger mb-2 delete',
@@ -113,13 +116,5 @@
   </table>
 
   <!-- ページネーション -->
-  <nav aria-label="pagination">
-    <ul class="pagination justify-content-center">
-      <li class="page-item disabled"><a class="page-link" href="#">前</a></li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">次</a></li>
-    </ul>
-  </nav>
+  <%= paginate @words %>
 </div>

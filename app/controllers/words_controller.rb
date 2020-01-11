@@ -1,7 +1,18 @@
 class WordsController < ApplicationController
   def index
-    @words = Word.all
+    @words = Word.page(params[:page])
   end
+
+  def edit
+    @word = Word.find(params[:id])
+  end
+
+  def update
+    word = Word.find(params[:id])
+    if word.update(word_params)
+      redirect_to words_path
+    end
+  end  
 
   def new
     @word = Word.new
@@ -18,7 +29,6 @@ class WordsController < ApplicationController
     word = Word.find(params[:id])
     word.delete
     head :no_content
-    #redirect_to words_path
   end
 
   private

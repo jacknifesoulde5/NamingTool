@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+if Rails.env = "development"
+  (1..50).each do |i|
+    Word.create(manualKind: "操作種類#{i}",
+                concreteMethod: "具体的な操作方法#{i}",
+                japanese_word: "日本語名#{i}",
+                english_word: "英語名#{i}",
+                use: "用途#{i}",
+              )
+  end
+end
