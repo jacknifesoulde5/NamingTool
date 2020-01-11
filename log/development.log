@@ -16,3 +16,2805 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 72ms (Views: 53.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:03:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:03:35 +0000
+  
+LoadError (cannot load such file -- /app/config/routes.rb):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+activesupport (5.2.4.1) lib/active_support/dependencies.rb:285:in `block in load'
+activesupport (5.2.4.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+activesupport (5.2.4.1) lib/active_support/dependencies.rb:285:in `load'
+railties (5.2.4.1) lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+railties (5.2.4.1) lib/rails/application/routes_reloader.rb:41:in `each'
+railties (5.2.4.1) lib/rails/application/routes_reloader.rb:41:in `load_paths'
+railties (5.2.4.1) lib/rails/application/routes_reloader.rb:20:in `reload!'
+railties (5.2.4.1) lib/rails/application/routes_reloader.rb:30:in `block in updater'
+activesupport (5.2.4.1) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (5.2.4.1) lib/rails/application/routes_reloader.rb:10:in `execute'
+railties (5.2.4.1) lib/rails/application/finisher.rb:143:in `block (2 levels) in <module:Finisher>'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.4.1) lib/active_support/execution_wrapper.rb:110:in `run!'
+activesupport (5.2.4.1) lib/active_support/reloader.rb:115:in `run!'
+activesupport (5.2.4.1) lib/active_support/execution_wrapper.rb:72:in `block in run!'
+activesupport (5.2.4.1) lib/active_support/execution_wrapper.rb:69:in `tap'
+activesupport (5.2.4.1) lib/active_support/execution_wrapper.rb:69:in `run!'
+activesupport (5.2.4.1) lib/active_support/reloader.rb:64:in `run!'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (87.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:04:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for 172.18.0.1 at 2020-01-10 22:04:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:05:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:05:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:05:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:05:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:23:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:23:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:23:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-10 22:23:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-11 00:58:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (14.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-11 00:59:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-11 00:59:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-11 01:05:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (10.0ms)
+Completed 200 OK in 70ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:07:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1848ms (Views: 1824.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:26:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 837ms (Views: 799.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:26:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 786ms (Views: 734.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:27:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 312ms (Views: 285.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:30:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 983ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Autoprefixer doesn’t support Node v4.8.2. Update it.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1855758507753964318_47348577256940'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:34:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 798ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Autoprefixer doesn’t support Node v4.8.2. Update it.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4085860990672557352_47440417622480'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 01:48:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 591ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Autoprefixer doesn’t support Node v4.8.2. Update it.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4085860990672557352_70064657814100'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:12:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 1499ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /app/app/assets/config
+  /app/app/assets/images
+  /app/app/assets/javascripts
+  /app/app/assets/stylesheets
+  /usr/local/bundle/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/bundle/gems/actioncable-5.2.4.1/lib/assets/compiled
+  /usr/local/bundle/gems/activestorage-5.2.4.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-5.2.4.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /app/node_modules
+  /usr/local/bundle/gems/popper_js-1.14.5/assets/javascripts
+  /usr/local/bundle/gems/bootstrap-4.4.1/assets/stylesheets
+  /usr/local/bundle/gems/bootstrap-4.4.1/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2151904503594798000_70081493132400'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:39:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (7.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 3405ms (Views: 3367.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:39:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 481ms (Views: 453.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:41:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3304ms (Views: 3259.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:42:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 417ms (Views: 393.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:45:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1203ms (Views: 1057.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 02:46:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 594ms (Views: 559.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 02:50:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 525ms (Views: 504.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 02:58:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (206.2ms)
+Completed 200 OK in 1429ms (Views: 1324.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 02:58:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 437ms (Views: 414.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 02:59:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 1137ms (Views: 1051.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:00:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 567ms (Views: 544.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:03:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 493ms (Views: 470.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:03:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 441ms (Views: 418.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:03:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 525ms (Views: 497.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:10:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 643ms (Views: 626.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:11:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:16:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:16:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 501ms (Views: 472.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:16:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:16:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:17:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:19:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 1009ms (Views: 960.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:20:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:20:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (560.9ms)
+Completed 500 Internal Server Error in 778ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x00007f68501ce408>:0x00007f685af51670>):
+    48: 
+    49: <!-- コンテンツ -->
+    50: <div class="container mt-3">
+    51:     <%= form_with(model: word,local: true) do |f| %>
+    52:       <div class="form-group">
+    53:         <%= f.label :manualKind, '操作の種類' %>
+    54:         <%= f.text_field :manualKind, class: 'form-control form-control-sm' %>
+  
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb__653619643548693725_70043089670200'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 03:21:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 802ms (Views: 766.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:21:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 364ms (Views: 343.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:31:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 1657ms (Views: 1562.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:37:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 676ms (Views: 644.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:38:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 502ms (Views: 477.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:39:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    48: 
+    49: <!-- コンテンツ -->
+    50: <div class="container mt-3">
+    51:     <%= form_for @word do |f| %>
+    52:       <div class="form-group">
+    53:         <%= f.label :manualKind, '操作の種類' %>
+    54:         <%= f.text_field :manualKind, class: 'form-control form-control-sm' %>
+  
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb__653619643548693725_70043080230200'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:39:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 427ms (Views: 412.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:43:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 1322ms (Views: 1286.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:44:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 1177ms (Views: 1074.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:44:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 558ms (Views: 515.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:47:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 1335ms (Views: 1219.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:48:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 1181ms (Views: 1130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:48:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 1157ms (Views: 1138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:48:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1422ms (Views: 1317.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:49:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 1405ms (Views: 1355.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/new" for 172.18.0.1 at 2020-01-11 03:49:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/words/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:49:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 730ms (Views: 689.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:51:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (700.1ms)
+Completed 500 Internal Server Error in 892ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `words' for #<#<Class:0x00007f68501ce408>:0x00007f6859ba0d88>):
+    48: 
+    49: <!-- コンテンツ -->
+    50: <div class="container mt-3">
+    51:     <%= form_with( model: @word,local: true,url: words) do |f| %>
+    52:       <div class="form-group">
+    53:         <%= f.label :manualKind, '操作の種類' %>
+    54:         <%= f.text_field :manualKind, class: 'form-control form-control-sm' %>
+  
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb__653619643548693725_70043079347080'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 03:51:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 1435ms (Views: 1304.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:03:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 672ms (Views: 629.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:03:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 1103ms (Views: 1001.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:04:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 676ms (Views: 653.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:04:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 464ms (Views: 421.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:05:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 994ms (Views: 952.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:05:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 1295ms (Views: 1231.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:06:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 6232ms (Views: 6137.6ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:07:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oMnHGJs/vhSKgbhjGEj0BKFv/ilsw2+f+Bomp/O4dXCd90Q8GjU92QCFQo/4yKhN0VGu9n2bBAypKZuvEEk95w==", "word"=>{"manualKind"=>"", "concreteMethod"=>"", "japanese_word"=>"取得", "english_word"=>"get", "use"=>"取得する"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `word_params' for #<WordsController:0x00007f803e300230>):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:07:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 922ms (Views: 874.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:13:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 1464ms (Views: 1410.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:13:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 1664ms (Views: 1635.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:15:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 595ms (Views: 518.6ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:15:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"07JmNMexUJM+HTTJqG9sj1BsbtS1CLiAJrrIXvxFMV3ujOUQRrvTXrQZziVI7zDGIFI+C6RQ0xN3iXVWH7R5yg==", "word"=>{"manualKind"=>"", "concreteMethod"=>"", "japanese_word"=>"あ", "english_word"=>"い", "use"=>"う"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `word_params' for #<WordsController:0x00007f803db4c3e0>):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:17:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 574ms (Views: 543.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:17:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 623ms (Views: 593.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:17:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iOawa2rmmo0k2VpOWGiBG4s6Vx5xWAcurHq+pwmvv+y12DNP6+wZQK7doKK46N1S+wQHwWAAbL39SQOv6l73ew==", "word"=>{"manualKind"=>"", "concreteMethod"=>"", "japanese_word"=>"a", "english_word"=>"i", "use"=>"u"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `word_params' for #<WordsController:0x00007f803d5b4608>):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:18:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 534ms (Views: 507.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:19:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 483ms (Views: 451.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:19:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZCyjiP2ciqOgxVaKuCAe31KIBHpK0Rv8AtIBqMuzCiIrjGqovzx5wSH77bKYNwyDXRwzvhzL/yhOPUOQN+Evw==", "word"=>{"manualKind"=>"", "concreteMethod"=>"", "japanese_word"=>"a", "english_word"=>"b", "use"=>"c"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `word_params' for #<WordsController:0x00007f8044ed0c08>):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:20:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 622ms (Views: 563.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:20:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 503ms (Views: 470.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:23:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 465ms (Views: 445.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:23:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BXTfqvtC1nxCZBsHduF/qYUWfctInvc9730zjpevl2M4SlyOekhVschg4euWYSPg9SgtFFnGnK6+To6GdF7f9A==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"お"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `word_params' for #<WordsController:0x00007f803e7964e8>):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:31:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (30.0ms)
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:31:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1065ms (Views: 1032.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2666ms (Views: 2602.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:31:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P+Z+4dmfEd9GJ9qY+W0YqMg99RyvR9QnaxDfgzWSbq8C2P3FWJWSEswjIHQZ7UThuAOlw74fv7Q6I2KL1mMmOA==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"o"}, "commit"=>"登録"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (10.2ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('a', 'i', 'u', 'e', 'o', '2020-01-11 04:31:30', '2020-01-11 04:31:30')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 15.1ms)
+
+
+  
+NameError (undefined local variable or method `word' for #<WordsController:0x00007f48340bdaa0>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:32:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (6.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (86.5ms)
+Completed 200 OK in 1186ms (Views: 1084.5ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:32:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 563ms (Views: 525.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:32:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRf8humJfMUMSsWB3ApOL3iuoJ5y6hQvjCrlqyAINBggKX+iaIP/CIZOP208ihJmCJDwQWOyf7zdGVijw/l8jw==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"o"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:32:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 573ms (Views: 552.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:32:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 763ms (Views: 695.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:32:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0U36d8OPE0B77VPVVkePEJXFrembm5EOH7RioTh7gJ3sc3lTQoWQjfHpqTm2x9NZ5fv9NorD+p1Oh9+p24rICg==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"o"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:34:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 536ms (Views: 505.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:35:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P4IrYugWofTXzEXvxqHvMbwtrtMSM5IVOGJRvJDyjmECvKhGaRwiOV3IvwMmIbN4zBP+DANr+YZpUey0cwPG9g==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"o"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:35:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 515ms (Views: 479.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:35:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tHgFCGXILL1PVKOOt4RdyY1w1XBy+fkuNakI1/62APj72MwoJ2jf385qGLaXk0+VguTitCTjHfp5RkrvAuQlA==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"a"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/words_controller.rb:11:in `create'
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:35:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tHgFCGXILL1PVKOOt4RdyY1w1XBy+fkuNakI1/62APj72MwoJ2jf385qGLaXk0+VguTitCTjHfp5RkrvAuQlA==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"o"}, "commit"=>"登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (1.5ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('a', 'i', 'u', 'e', 'o', '2020-01-11 04:35:55', '2020-01-11 04:35:55')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 7.5ms)
+
+
+  
+NameError (undefined local variable or method `word' for #<WordsController:0x000055e2636cbe70>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:37:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (57.8ms)
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:37:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 200 OK in 4877ms (Views: 4781.6ms | ActiveRecord: 2.2ms)
+
+
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (10.9ms)
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:37:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 1993ms (Views: 1899.0ms | ActiveRecord: 2.8ms)
+
+
+Completed 200 OK in 1564ms (Views: 1341.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:37:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D7SD2AeNvltSG5HTKra2o6uVhOv1EILQETTLdfCCWEUyigD8hoc9ltgfaz/KNurq26vUNORI6UNAB3Z9E3MQ0g==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"i", "japanese_word"=>"u", "english_word"=>"e", "use"=>"o"}, "commit"=>"登録"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (7.1ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('a', 'i', 'u', 'e', 'o', '2020-01-11 04:37:23', '2020-01-11 04:37:23')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 9.7ms)
+
+
+  
+NameError (undefined local variable or method `words' for #<WordsController:0x00007fd76800dd58>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/tools/conv.html" for 172.18.0.1 at 2020-01-11 04:37:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/tools/conv.html"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:37:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 573ms (Views: 551.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:37:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 517ms (Views: 486.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:38:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 793ms (Views: 766.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:39:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 805ms (Views: 776.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:44:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 633ms (Views: 565.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:45:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i0NmDcWlj+zjvkGcFDfMwjLdK8lBoSG9mETgW3MaGVi2feUpRK8MIWm6u3D0t5CLQuN7FlD5Si7Jd11TkOtRzw==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"お"}, "commit"=>"登録"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (0.7ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'い', 'う', 'え', 'お', '2020-01-11 04:45:05', '2020-01-11 04:45:05')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 4.6ms)
+
+
+  
+NameError (undefined local variable or method `words' for #<WordsController:0x000055e260a187c0>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 04:51:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 841ms (Views: 818.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:51:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 1018ms (Views: 967.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:52:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tzFJw+ad3JRZaDCkGDHrcxtTETV3PwcKlb3RSwWFrC+KD8rnZ5dfWdNsykj4sbc6a21B6mZnbJnEjmxD5nTkuA==", "word"=>{"manualKind"=>"か", "concreteMethod"=>"き", "japanese_word"=>"く", "english_word"=>"け", "use"=>"こ"}, "commit"=>"登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (1.6ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('か', 'き', 'く', 'け', 'こ', '2020-01-11 04:52:02', '2020-01-11 04:52:02')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 7.8ms)
+
+
+  
+NameError (undefined local variable or method `words' for #<WordsController:0x00007fd778ea3150>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 04:53:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1157ms (Views: 1069.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 04:54:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oWCTplvsAqUPXr2gQ3eiL2ELTstyjqqLRL92wgOCZ3ucXhCC2uaBaIVaR0yj9/5mETUeFGPWwRgVjMvK4HMv7A==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"か", "japanese_word"=>"さ", "english_word"=>"た", "use"=>"な"}, "commit"=>"登録"}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (1.0ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'か', 'さ', 'た', 'な', '2020-01-11 04:54:00', '2020-01-11 04:54:00')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 10.4ms)
+
+
+  
+NameError (undefined local variable or method `words' for #<WordsController:0x00007fd77c1ad5c8>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 05:09:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (2.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1114ms (Views: 926.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 05:20:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 635ms (Views: 597.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 07:57:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (50.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (3.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 1756ms (Views: 1682.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 08:01:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 800ms (Views: 772.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 08:01:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y0wVkoNywbn9t/BzHzyKYUZra8SoJBLFKsb3ZlwSHdz2cpa2AnhCdHezCp//vNYoNlU7G7l8eVZ79Upuv+NVSw==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"お"}, "commit"=>"登録"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[36mWord Create (14.3ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'い', 'う', 'え', 'お', '2020-01-11 08:01:55', '2020-01-11 08:01:55')[0m
+  ↳ app/controllers/words_controller.rb:13
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:13
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 19.8ms)
+
+
+  
+NameError (undefined local variable or method `words' for #<WordsController:0x00007fd776583478>):
+  
+app/controllers/words_controller.rb:14:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 08:59:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 4285ms (Views: 4220.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 08:59:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (118.8ms)
+Completed 200 OK in 714ms (Views: 573.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 08:59:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hp+RuInstYb00CYhu32VjKnx+QhJkNIxjrNZ8Iw7+a67oRKcCOY2S37U3M1b/cnF2c+p11jIuaLfgOT4b8qxOQ==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"お"}, "commit"=>"登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (0.7ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'い', 'う', 'え', 'お', '2020-01-11 08:59:47', '2020-01-11 08:59:47')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words/8
+Completed 302 Found in 53301ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/words/8" for 172.18.0.1 at 2020-01-11 09:00:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for WordsController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:01:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 604ms (Views: 558.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:01:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 512ms (Views: 478.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:01:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyT4inivZ8rp+UFqnM7f6SN6MSxB6Q+jrcDnwomlO14eGnuu+aXkB2P9u4Z8ToOgU0Rh81CxZDD881rKalRzyQ==", "word"=>{"manualKind"=>"j", "concreteMethod"=>"k", "japanese_word"=>"k", "english_word"=>"j", "use"=>"l"}, "commit"=>"登録"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (0.9ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('j', 'k', 'k', 'j', 'l', '2020-01-11 09:01:38', '2020-01-11 09:01:38')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:05:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 2390ms (Views: 2332.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:05:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (92.2ms)
+Completed 200 OK in 680ms (Views: 657.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:05:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K4b4Fra0DAuerwH2NkI5Ifd6dp8tCpAiLOSnIJ6NoXQWuHsyN76PxhSr+xrWwmVoh0QmQDxS+7F91xoofXzp4w==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"お"}, "commit"=>"登録"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (1.0ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'い', 'う', 'え', 'お', '2020-01-11 09:05:45', '2020-01-11 09:05:45')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (41.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:06:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:07:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 2366ms (Views: 2299.2ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:08:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+CJmbc/KeBVusJPt7m+KZwUCIlQ5by6yHlesHAR4xuW3gq9NjWqLd++OKNXOeJg7CpYVkG91ymZSuO4k+CrjA==", "word"=>{"manualKind"=>"い", "concreteMethod"=>"う", "japanese_word"=>"お", "english_word"=>"k", "use"=>"k"}, "commit"=>"登録"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (1.1ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('い', 'う', 'お', 'k', 'k', '2020-01-11 09:08:04', '2020-01-11 09:08:04')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words/11
+Completed 302 Found in 29ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/words/11" for 172.18.0.1 at 2020-01-11 09:08:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for WordsController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:09:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/app/app/controllers/words_controller.rb:13: unknown regexp options - lcalht
+/app/app/controllers/words_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+direct_to ”http://localhost:3000/words”
+                              ^):
+  
+app/controllers/words_controller.rb:13: unknown regexp options - lcalht
+app/controllers/words_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:12:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (4.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 944ms (Views: 877.6ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:15:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 1198ms (Views: 1148.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:15:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 945ms (Views: 909.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:16:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XyZmR3c17ZoLqshsLrESWa3iIg8HzSlWoxMogwWkz3josynySl3+ixtzP66FAeXEjSZU8LD7m7e+s6OxDbYRqg==", "word"=>{"manualKind"=>"jk", "concreteMethod"=>"k", "japanese_word"=>"k", "english_word"=>"l", "use"=>"d"}, "commit"=>"登録"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (3.9ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('jk', 'k', 'k', 'l', 'd', '2020-01-11 09:16:07', '2020-01-11 09:16:07')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to 
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 8.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  
+app/controllers/words_controller.rb:13:in `create'
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:16:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VBCoB9OtnEA0ryE61ZjXTGXQrv+pVeQAsodrNjC+cDppLisjUqcfjb6r29Y1GIsFFe7+ILgNj5PjtNY+0084rQ==", "word"=>{"manualKind"=>"jk", "concreteMethod"=>"k", "japanese_word"=>"k", "english_word"=>"l", "use"=>"d"}, "commit"=>"登録"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (1.8ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('jk', 'k', 'k', 'l', 'd', '2020-01-11 09:16:28', '2020-01-11 09:16:28')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to 
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 11.7ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  
+app/controllers/words_controller.rb:13:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:16:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 567ms (Views: 540.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:16:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 511ms (Views: 455.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:16:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xS9vMuM34KPu70QKJUl3Jlhr3jnFftfJZ0Z1pV+T1jVyuiCH3l/zsv42s8iO+YC7eK+oxnJIZSh65v6XV4EI5w==", "word"=>{"manualKind"=>"i", "concreteMethod"=>"k", "japanese_word"=>"l", "english_word"=>"ka", "use"=>"a"}, "commit"=>"登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (1.2ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('i', 'k', 'l', 'ka', 'a', '2020-01-11 09:16:51', '2020-01-11 09:16:51')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to 
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  
+app/controllers/words_controller.rb:13:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:17:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 2469ms (Views: 2409.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:17:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 539ms (Views: 504.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:17:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CPPKlIepbTLxbHSnpjC3nG3dLQexe0/hog54MTc2T5i/ZoUhusF+I+G1g2UNgEABTRlb+AZN/QC/rvMDPySRSg==", "word"=>{"manualKind"=>"1", "concreteMethod"=>"2", "japanese_word"=>"3", "english_word"=>"4", "use"=>"5"}, "commit"=>"登録"}
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (8.1ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('1', '2', '3', '4', '5', '2020-01-11 09:17:49', '2020-01-11 09:17:49')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (23.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words
+Completed 302 Found in 79ms (ActiveRecord: 34.4ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:17:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 437ms (Views: 416.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:27:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (2.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 643ms (Views: 614.4ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/words/2" for 172.18.0.1 at 2020-01-11 09:27:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for WordsController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:28:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 2253ms (Views: 2190.6ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/words/2" for 172.18.0.1 at 2020-01-11 09:28:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nQ+DLLU6FFxjPv5aSv774Nq0ChkdG31+u68WppgxdZygMQAINDCXkek6BLaqfqepqopaxgxDFu3qnKuue8A9Cw==", "id"=>"2"}
+  [1m[36mWord Load (10.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (20.7ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 2[0m
+  ↳ app/controllers/words_controller.rb:19
+Redirected to http://localhost:3000/words
+Completed 302 Found in 72ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:28:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 503ms (Views: 478.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/words/4" for 172.18.0.1 at 2020-01-11 09:28:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"evPdxwKlWMXRLKesS7qG1mFZtweOeM61mpzw97reKNdHzV7jg6/bCFsoXUCrOtqfEWfn2J8gpSbLr03/WS9gQA==", "id"=>"4"}
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (9.9ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 4[0m
+  ↳ app/controllers/words_controller.rb:19
+Redirected to http://localhost:3000/words
+Completed 302 Found in 21ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:28:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 459ms (Views: 421.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/words/11" for 172.18.0.1 at 2020-01-11 09:28:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/CFC0i2ZL7mGlQldtTh5DOv34MTXeBzyAOClFDfqiG3BH8H2rJOsdAyR87FVuCVFm8mwG8Ygd2FR0xgc1BvA+g==", "id"=>"11"}
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 11 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (15.7ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 11[0m
+  ↳ app/controllers/words_controller.rb:19
+Redirected to http://localhost:3000/words
+Completed 302 Found in 40ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:28:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 496ms (Views: 467.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:31:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 2972ms (Views: 2910.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 09:32:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 578ms (Views: 542.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 09:32:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a3eU1qn5q+BrgIdKLV5EgiQtubws2sMcVsAnqEz7g/Tc4ttjlJG48XtZcIiG7rMfBOnPQ5vscf1LYKyaROldJg==", "word"=>{"manualKind"=>"あか", "concreteMethod"=>"さた", "japanese_word"=>"な", "english_word"=>"はま", "use"=>"やら"}, "commit"=>"登録"}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (0.8ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あか', 'さた', 'な', 'はま', 'やら', '2020-01-11 09:32:11', '2020-01-11 09:32:11')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words
+Completed 302 Found in 49ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:32:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 507ms (Views: 452.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:38:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 1260ms (Views: 1080.6ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/words/3" for 172.18.0.1 at 2020-01-11 09:38:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dtqQ/MkNwjM53wPFsejFz4NQHwDRIUOlbMJ1YtgnmvBL5BPYSAdB/rPb+SlRaJmG825P38B5KDY98chqO9bSZw==", "id"=>"3"}
+  [1m[36mWord Load (12.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (15.6ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 3[0m
+  ↳ app/controllers/words_controller.rb:19
+Redirected to http://localhost:3000/words
+Completed 302 Found in 266ms (ActiveRecord: 28.4ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:38:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 1247ms (Views: 1061.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:49:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 2989ms (Views: 2939.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/words/5" for 172.18.0.1 at 2020-01-11 09:49:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (17.8ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 5[0m
+  ↳ app/controllers/words_controller.rb:19
+Redirected to http://localhost:3000/words
+Completed 200 OK in 34ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:49:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 535ms (Views: 490.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 09:50:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 4886ms (Views: 4828.9ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/words/6" for 172.18.0.1 at 2020-01-11 09:50:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as JS
+  Parameters: {"id"=>"6"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (7.0ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 6[0m
+  ↳ app/controllers/words_controller.rb:19
+Completed 204 No Content in 40ms (ActiveRecord: 7.9ms)
+
+
+Started DELETE "/words/6" for 172.18.0.1 at 2020-01-11 09:50:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as JS
+  Parameters: {"id"=>"6"}
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=6):
+  
+app/controllers/words_controller.rb:18:in `destroy'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 10:19:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::NoDatabaseError (Unknown database 'app_development'):
+  
+activerecord (5.2.4.1) lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.4.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.4.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.4.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `app_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE `app_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/words" for 172.18.0.1 at 2020-01-11 10:23:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (5.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateWords (20200111004626)
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE `words` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `manualKind` varchar(255), `concreteMethod` varchar(255), `japanese_word` varchar(255), `english_word` varchar(255), `use` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200111004626_create_words.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200111004626')[0m
+  ↳ bin/rails:9
+  [1m[35m (30.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (4.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-01-11 10:26:57', '2020-01-11 10:26:57')[0m
+  ↳ bin/rails:9
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  ↳ bin/rails:9
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/words" for 172.18.0.1 at 2020-01-11 10:29:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 5115ms (Views: 5060.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 10:30:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 551ms (Views: 509.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 10:30:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SxMF0F2r82lunCPoQNkw0FYzKdswoCAAUxyb+kKRImD8hkplYMPgeH5F1CrracdNdvdfJIeWkuFOvBDISoP8sg==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"b", "japanese_word"=>"c", "english_word"=>"d", "use"=>"e"}, "commit"=>"登録"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('a', 'b', 'c', 'd', 'e', '2020-01-11 10:30:07', '2020-01-11 10:30:07')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words
+Completed 302 Found in 21ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 10:30:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 516ms (Views: 496.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/words/1" for 172.18.0.1 at 2020-01-11 10:30:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#destroy as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:18
+  [1m[36mWord Destroy (7.5ms)[0m  [1m[31mDELETE FROM `words` WHERE `words`.`id` = 1[0m
+  ↳ app/controllers/words_controller.rb:19
+Completed 204 No Content in 78ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 10:30:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 465ms (Views: 426.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 10:30:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ugxfO7JGrcZby2Lc643dkGj3i0ng2X2K1Zelhq9eZ1YNmRCOjy6+10sSlR5APSoNSDP9tlfvz2vINy60p0y5hA==", "word"=>{"manualKind"=>"a", "concreteMethod"=>"b", "japanese_word"=>"c", "english_word"=>"d", "use"=>"e"}, "commit"=>"登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('a', 'b', 'c', 'd', 'e', '2020-01-11 10:30:35', '2020-01-11 10:30:35')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words
+Completed 302 Found in 24ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 10:30:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 385ms (Views: 354.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 10:30:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 500ms (Views: 473.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-11 10:30:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oSeqayaFcZoZOyyOlNcDlPYVsYfprayaGex/ssFO8AUWsuXeG+1iiwni20w/Z/QJ1tHHeF6bHnsETPSAyVwu1w==", "word"=>{"manualKind"=>"d", "concreteMethod"=>"", "japanese_word"=>"e", "english_word"=>"f", "use"=>"k"}, "commit"=>"登録"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[36mWord Create (0.8ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('d', '', 'e', 'f', 'k', '2020-01-11 10:30:43', '2020-01-11 10:30:43')[0m
+  ↳ app/controllers/words_controller.rb:12
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:12
+Redirected to http://localhost:3000/words
+Completed 302 Found in 15ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 10:30:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 318ms (Views: 302.2ms | ActiveRecord: 0.7ms)
+
+

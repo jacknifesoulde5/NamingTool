@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  manualKind: MyString
+  concreteMethod: MyString
+  japanese_word: MyString
+  english_word: MyString
+  use: MyText
+
+two:
+  manualKind: MyString
+  concreteMethod: MyString
+  japanese_word: MyString
+  english_word: MyString
+  use: MyText
