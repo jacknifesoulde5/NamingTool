@@ -1,0 +1,25 @@
+  <%= form_with( model: word,local: true) do |f| %>
+    <div class="form-group">
+      <%= f.label :manualKind, '操作の種類' %>
+      <%= f.text_field :manualKind, class: 'form-control form-control-sm' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :concreteMethod, '具体的な操作方法' %>
+      <%= f.text_field :concreteMethod, class: 'form-control form-control-sm' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :japanese_word, '日本語' %>
+      <%= f.text_field :japanese_word, class: 'form-control form-control-sm' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :english_word, '英語' %>
+      <%= f.text_field :english_word, class: 'form-control form-control-sm' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :use, '用途' %>
+      <%= f.text_field :use, class: 'form-control form-control-sm' %>
+    </div>
+
+    <!-- 処理ボタン -->
+    <%= f.submit button_name, class: 'btn btn-outline-dark mb-2 mx-auto d-block' %>
+  <% end %>

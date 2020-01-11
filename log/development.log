@@ -3482,3 +3482,332 @@ Processing by WordsController#index as HTML
 Completed 200 OK in 651ms (Views: 624.9ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:41:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (254.4ms)
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:41:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (238.0ms)
+Completed 200 OK in 3225ms (Views: 3181.6ms | ActiveRecord: 10.8ms)
+
+
+Completed 200 OK in 3963ms (Views: 3882.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:41:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (33.6ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html or :body option.):
+    48: 
+    49: <!-- コンテンツ -->
+    50: <div class="container mt-3">
+    51:   <%= render pertial: 'form' %>
+    52: </div>
+  
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb___2072126171714357717_70239639989380'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:42:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (275.4ms)
+Completed 200 OK in 1283ms (Views: 1246.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:44:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (259.5ms)
+Completed 200 OK in 906ms (Views: 876.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:44:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (36.0ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html or :body option.):
+    48: 
+    49: <!-- コンテンツ -->
+    50: <div class="container mt-3">
+    51:   <%= render pertial: 'form',word: @word %>
+    52: </div>
+  
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb___2072126171714357717_70239560755820'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:45:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (11.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (368.5ms)
+Completed 200 OK in 1653ms (Views: 1494.7ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:45:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/new.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html or :body option.):
+    46:   </div>
+    47: </nav>
+    48: 
+    49: <%= render pertial: 'form',word: @word %>
+  
+app/views/words/new.html.erb:49:in `_app_views_words_new_html_erb___2072126171714357717_70239697609480'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:48:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (226.2ms)
+Completed 200 OK in 754ms (Views: 720.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:48:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/_form.html.erb (199.2ms)
+  Rendered words/new.html.erb within layouts/application (228.8ms)
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x000055da099d3800>:0x00007fc3e1fd3778>):
+    1:   <%= form_with( model: word,local: true) do |f| %>
+    2:     <div class="form-group">
+    3:       <%= f.label :manualKind, '操作の種類' %>
+    4:       <%= f.text_field :manualKind, class: 'form-control form-control-sm' %>
+  
+app/views/words/_form.html.erb:1:in `_app_views_words__form_html_erb___3788353102168771618_70239643924860'
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb___2072126171714357717_70239643369680'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:50:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (289.2ms)
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:50:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (10.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (2.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (264.8ms)
+Completed 200 OK in 1160ms (Views: 1127.9ms | ActiveRecord: 4.2ms)
+
+
+Completed 200 OK in 3734ms (Views: 3669.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:50:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/_form.html.erb (202.9ms)
+  Rendered words/new.html.erb within layouts/application (226.1ms)
+Completed 500 Internal Server Error in 328ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x000055651cb1aef0>:0x00007f213658b660>):
+    1:   <%= form_with( model: word,local: true) do |f| %>
+    2:     <div class="form-group">
+    3:       <%= f.label :manualKind, '操作の種類' %>
+    4:       <%= f.text_field :manualKind, class: 'form-control form-control-sm' %>
+  
+app/views/words/_form.html.erb:1:in `_app_views_words__form_html_erb___3487560688376383751_69890311772280'
+app/views/words/new.html.erb:51:in `_app_views_words_new_html_erb__562805975985502506_69890311143500'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:50:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (215.5ms)
+Completed 200 OK in 710ms (Views: 686.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:50:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/_form.html.erb (58.2ms)
+  Rendered words/new.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 526ms (Views: 492.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:52:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:95
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:119
+  Rendered words/index.html.erb within layouts/application (107.9ms)
+Completed 200 OK in 511ms (Views: 489.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:53:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/_form.html.erb (2.6ms)
+  Rendered words/new.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 517ms (Views: 488.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/2/edit" for 172.18.0.1 at 2020-01-11 12:53:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:7
+  Rendering words/edit.html.erb within layouts/application
+  Rendered words/_form.html.erb (4.3ms)
+  Rendered words/edit.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 974ms (Views: 878.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:56:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:50
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:74
+  Rendered words/index.html.erb within layouts/application (414.3ms)
+Completed 200 OK in 1713ms (Views: 1681.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tools/conv.html" for 172.18.0.1 at 2020-01-11 12:56:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/tools/conv.html"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 12:56:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:50
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:74
+  Rendered words/index.html.erb within layouts/application (524.8ms)
+Completed 200 OK in 1735ms (Views: 1693.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-11 12:56:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.4ms)
+  Rendered words/_form.html.erb (2.2ms)
+  Rendered words/new.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 615ms (Views: 564.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/2/edit" for 172.18.0.1 at 2020-01-11 12:56:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/words_controller.rb:7
+  Rendering words/edit.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.4ms)
+  Rendered words/_form.html.erb (2.2ms)
+  Rendered words/edit.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 536ms (Views: 499.9ms | ActiveRecord: 0.6ms)
+
+
