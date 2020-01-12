@@ -1,0 +1,92 @@
+<!-- ナビゲーションバー -->
+<%= render 'layouts/navbar' %>
+
+<!-- コンテンツ -->
+<div class="container mt-3">
+  <div class="header font-weight-bold">メソッド名</div>
+  <div class="row m-1">
+    <div class="col-6 border-right">
+      <div class="bg-light border border-gray py-2 px-4 m-2">
+        <!-- TODO:後でこのルーティングURL指定は見直したい -->
+        <%= form_with(model: @word, url: tool_index_path,local: true) do |f| %>
+            <div class="form-group">
+                <label for="selectKind">操作の種類</label>
+                <select class="form-control form-control-sm" id="selectKind">
+                  <% @words.each do |word| %>
+                    <option><%= word.manualKind %></option>
+                  <% end %>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="selectMethod">具体的な操作方法</label>
+                <select class="form-control form-control-sm" id="selectMethod">
+                  <% @words.each do |word| %>
+                    <option><%= word.concreteMethod %></option>
+                  <% end %>
+                </select>
+            </div>
+            <div class="form-group">
+              <%= f.label :japanese_word,"操作対象"%>
+              <%= f.text_field :japanese_word, class: 'form-control form-control-sm' %>
+            </div>
+            <!-- 処理ボタン -->
+            <%= f.submit "暫定登録", class: 'btn btn-outline-dark mb-2 mx-auto d-block' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="bg-light border border-gray pt-2 px-4 m-2 pb-1">
+        <form>
+          <div class="form-group">
+            <label for="inputMethodName">メソッド名(スネークケース小文字)</label>
+            <textarea 
+              class="form-control" 
+              id="inputMethodName" 
+              rows="7" 
+              readonly><%= @convWord if @convWord.presence %>
+            </textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="header font-weight-bold">その他</div>
+  <div class="row m-1">
+    <div class="col-6 border-right">
+      <div class="bg-light border border-gray py-2 px-4 m-2">
+        <form>
+            <div class="form-group">
+              <label for="inputWord1">単語1</label>
+              <input type="text" class="form-control form-control-sm" id="inputWord1">
+            </div>
+            <div class="form-group">
+              <label for="inputWord2">単語2</label>
+              <input type="text" class="form-control form-control-sm" id="inputWord2">
+            </div>
+            <div class="form-group">
+              <label for="inputWord3">単語3</label>
+              <input type="text" class="form-control form-control-sm" id="inputWord3">
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="bg-light border border-gray py-2 px-4 m-2">
+        <form>
+          <div class="form-group">
+            <label for="inputClassName">クラス名、モジュール名(キャメルケース)</label>
+            <input type="text" class="form-control form-control-sm" id="inputClassName" readonly>
+          </div>
+          <div class="form-group">
+            <label for="inputVariable">変数名(スネークケース小文字)</label>
+            <input type="text" class="form-control form-control-sm" id="inputVariable" readonly>
+          </div>
+          <div class="form-group">
+            <label for="inputFix">固定値(スネークケース大文字)</label>
+            <input type="text" class="form-control form-control-sm" id="inputFix" readonly>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,11 +7,21 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 if Rails.env = "development"
-  (1..50).each do |i|
-    Word.create(manualKind: "操作種類#{i}",
-                concreteMethod: "具体的な操作方法#{i}",
+  # 大量データ投入
+  # (1..50).each do |i|
+  #   Word.create(manualKind: "取得する#{i}",
+  #               concreteMethod: "DB#{i}",
+  #               japanese_word: "日本語名#{i}",
+  #               english_word: "englishName#{i}",
+  #               use: "用途#{i}",
+  #             )
+  # end
+
+  (1..5).each do |i|
+    Word.create(manualKind: "取得する#{i}",
+                concreteMethod: "DB#{i}",
                 japanese_word: "日本語名#{i}",
-                english_word: "英語名#{i}",
+                english_word: "englishName#{i}",
                 use: "用途#{i}",
               )
   end

@@ -4672,3 +4672,2551 @@ Processing by WordsController#index as HTML
 Completed 200 OK in 800ms (Views: 750.5ms | ActiveRecord: 4.0ms)
 
 
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:25:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (436.6ms)
+Completed 200 OK in 4191ms (Views: 4114.7ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:32:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+NameError (undefined local variable or method `tool' for #<ActionDispatch::Routing::Mapper:0x00005600b6b56898>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:33:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered tool/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8141ms (Views: 8057.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:35:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered tool/index.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.1.1/app/views"
+):
+    1: <!-- ナビゲーションバー -->
+    2: <%= render '../layouts/navbar' %>
+    3: 
+    4:     <!-- コンテンツ -->
+    5:     <div class="container mt-3">
+  
+app/views/tool/index.html.erb:2:in `_app_views_tool_index_html_erb__18650112031604240_70350935669860'
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:36:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered tool/index.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 1196ms (Views: 1163.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:36:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered tool/index.html.erb within layouts/application (138.6ms)
+Completed 200 OK in 1366ms (Views: 1338.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 172.18.0.1 at 2020-01-12 03:36:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/list.html"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:36:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered tool/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 1289ms (Views: 1256.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:36:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (442.3ms)
+Completed 200 OK in 1575ms (Views: 1393.1ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-12 03:36:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered words/_form.html.erb (4.0ms)
+  Rendered words/new.html.erb within layouts/application (78.6ms)
+Completed 200 OK in 963ms (Views: 926.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tools/conv.html" for 172.18.0.1 at 2020-01-12 03:37:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/tools/conv.html"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:37:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 716ms (Views: 682.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:40:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered tool/index.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 1225ms (Views: 1170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:40:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (14.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (580.2ms)
+Completed 200 OK in 1634ms (Views: 1587.6ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:40:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 617ms (Views: 583.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:40:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (141.7ms)
+Completed 200 OK in 1299ms (Views: 1266.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:40:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered tool/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 910ms (Views: 846.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:41:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (206.7ms)
+Completed 200 OK in 872ms (Views: 840.3ms | ActiveRecord: 1.6ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (73.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `app_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `app_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE DATABASE `app_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE DATABASE `app_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (64.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateWords (20200111004626)
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE `words` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `manualKind` varchar(255), `concreteMethod` varchar(255), `japanese_word` varchar(255), `english_word` varchar(255), `use` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200111004626_create_words.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (3.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200111004626')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-01-12 03:43:03', '2020-01-12 03:43:03')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:43:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (108.1ms)
+Completed 200 OK in 1269ms (Views: 1186.9ms | ActiveRecord: 5.7ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mWord Create (0.6ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('取得する1', 'DB1', '日本語名1', 'englishName1', '用途1', '2020-01-12 03:45:30', '2020-01-12 03:45:30')[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mWord Create (0.6ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('取得する2', 'DB2', '日本語名2', 'englishName2', '用途2', '2020-01-12 03:45:30', '2020-01-12 03:45:30')[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('取得する3', 'DB3', '日本語名3', 'englishName3', '用途3', '2020-01-12 03:45:30', '2020-01-12 03:45:30')[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mWord Create (0.7ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('取得する4', 'DB4', '日本語名4', 'englishName4', '用途4', '2020-01-12 03:45:30', '2020-01-12 03:45:30')[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('取得する5', 'DB5', '日本語名5', 'englishName5', '用途5', '2020-01-12 03:45:30', '2020-01-12 03:45:30')[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:45:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (2.6ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (284.1ms)
+Completed 200 OK in 1076ms (Views: 1021.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:45:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered tool/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 642ms (Views: 608.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:51:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered tool/index.html.erb within layouts/application (76.9ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+    14:                   <% @words.each do |word| %>
+    15:                     <option><%= word.manualKind %></option>
+    16:                   <% end %>
+    17:                 </select>
+  
+app/views/tool/index.html.erb:14:in `_app_views_tool_index_html_erb__18650112031604240_70350939155620'
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:51:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `All' for #<Class:0x0000556064db64c8>):
+  
+app/controllers/tool_controller.rb:3:in `index'
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:53:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  [1m[36mWord Load (4.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (82.4ms)
+Completed 200 OK in 6147ms (Views: 6082.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:54:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  [1m[36mWord Load (2.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (87.5ms)
+Completed 200 OK in 1521ms (Views: 1423.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 03:55:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 432ms (Views: 360.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:55:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 457ms (Views: 387.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 03:59:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered tool/index.html.erb within layouts/application (359.0ms)
+Completed 500 Internal Server Error in 476ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x000055cf41ffc5b0>:0x000055cf3fe9cff0>):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( model: word,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___4494047496206247491_47174309464180'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:16:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered tool/index.html.erb within layouts/application (280.6ms)
+Completed 500 Internal Server Error in 392ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_tool_path' for #<#<Class:0x00007f6a5cb4ab68>:0x00007f6a5cb48188>):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: new_tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047399304360'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:18:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (262.3ms)
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `”暫定登録”' for #<#<Class:0x00007f6a5cb77d48>:0x00007f6a5cb75cf0>):
+    29:               <%= f.text_field :japanese_word, class: 'form-control form-control-sm' %>
+    30:             </div>
+    31:             <!-- 処理ボタン -->
+    32:             <%= f.submit ”暫定登録”, class: 'btn btn-outline-dark mb-2 mx-auto d-block' %>
+    33:         <% end %>
+    34:       </div>
+    35:     </div>
+  
+app/views/tool/index.html.erb:32:in `block in _app_views_tool_index_html_erb___1885847902907202060_70047399428920'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047399428920'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:18:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 4654ms (Views: 4626.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tool/new" for 172.18.0.1 at 2020-01-12 04:18:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/tool/new"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:21:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (2.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered tool/index.html.erb within layouts/application (675.8ms)
+Completed 500 Internal Server Error in 770ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tools_path' for #<#<Class:0x00007f6a5cb77d48>:0x00007f6a546bfe48>):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tools_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047436802700'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:21:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered tool/index.html.erb within layouts/application (55.8ms)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool"}, missing required keys: [:id]):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047438019980'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:26:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered tool/index.html.erb within layouts/application (277.4ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 6.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tool_path' for #<#<Class:0x00007f6a55163868>:0x00007f6a55161e50>):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047461204140'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:26:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (46.9ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool"}, missing required keys: [:id]):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047398661220'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:27:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (54.8ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool"}, missing required keys: [:id]):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___1885847902907202060_70047330738820'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:27:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (56.9ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool"}, missing required keys: [:id]):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___802414508498589667_70075685697180'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:28:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (55.0ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool"}, missing required keys: [:id]):
+     7:   <div class="row m-1">
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <%= form_with( url: tool_path,local: true) do |f| %>
+    11:             <div class="form-group">
+    12:                 <label for="selectKind">操作の種類</label>
+    13:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__2244115169066197045_47043047996780'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:30:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (88.8ms)
+Completed 200 OK in 2746ms (Views: 2724.1ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 04:30:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5lYy+AyxfyvfcVXG4+MhBJVomLrZPh/vAZ4GmDb24//baLHcjbv85lV1ryoDY31N5VbIZchmdHxQrbuQ1QeraA==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: word):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:39:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (73.6ms)
+Completed 200 OK in 2777ms (Views: 2719.4ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 04:39:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tnV+1O1GIIhuUGjXjz+2QDp8C9OM8YwHky84XTZUB4GLS/3wbEyjReRUkjtvv+oJSkJbDJ2p55TCHIVV1aVPFg==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: word):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 04:45:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tnV+1O1GIIhuUGjXjz+2QDp8C9OM8YwHky84XTZUB4GLS/3wbEyjReRUkjtvv+oJSkJbDJ2p55TCHIVV1aVPFg==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 40ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: word):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-12 04:45:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 632ms (Views: 596.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 04:45:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` WHERE `words`.`japanese_word` LIKE '%12%' LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 745ms (Views: 704.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:47:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 488ms (Views: 457.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 04:47:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R/2Cj/hIgU4I4dmNv8l9+5h53n3JOxCtTEodcoyTCorze7Cz1/iWo8EETvdwigRM2CvMf9klMJdppbDVGqK18g==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: word):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started GET "/words" for 172.18.0.1 at 2020-01-12 04:49:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (73.5ms)
+Completed 200 OK in 578ms (Views: 536.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-12 04:49:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered words/_form.html.erb (2.5ms)
+  Rendered words/new.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 677ms (Views: 642.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-12 04:49:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Fg5ii4EmHCHB2GnO7iM1qdQmiA++2vD4wlHxwoJ70lXzXY/E2yLYZfelmWQCHtLh5Ts34nN2SL+qcz1Ahsxmw==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"い"}, "commit"=>"登録"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:24
+  [1m[36mWord Create (0.8ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'い', 'う', 'え', 'い', '2020-01-12 04:49:20', '2020-01-12 04:49:20')[0m
+  ↳ app/controllers/words_controller.rb:24
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:24
+Redirected to http://localhost:3000/words
+Completed 302 Found in 55ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 04:49:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (102.9ms)
+Completed 200 OK in 784ms (Views: 702.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/new" for 172.18.0.1 at 2020-01-12 04:50:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#new as HTML
+  Rendering words/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered words/_form.html.erb (30.5ms)
+  Rendered words/new.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 3089ms (Views: 2991.2ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/words" for 172.18.0.1 at 2020-01-12 04:50:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xPxwf9Z2zusKifOO2dUiGvPsHtdaYbYFwzPvhIL+wV5zaT/K6x7d+hpQBExyZdWH0yhoKO1XBOTek2S2iuwfjA==", "word"=>{"manualKind"=>"あ", "concreteMethod"=>"い", "japanese_word"=>"う", "english_word"=>"え", "use"=>"お"}, "commit"=>"登録"}
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:52:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:53:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (149.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/words_controller.rb:25
+Processing by ToolController#index as HTML
+  [1m[36mWord Create (25.8ms)[0m  [1m[32mINSERT INTO `words` (`manualKind`, `concreteMethod`, `japanese_word`, `english_word`, `use`, `created_at`, `updated_at`) VALUES ('あ', 'い', 'う', 'え', 'お', '2020-01-12 04:53:53', '2020-01-12 04:53:53')[0m
+  ↳ app/controllers/words_controller.rb:25
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/words_controller.rb:25
+Redirected to http://localhost:3000/words
+Completed 302 Found in 214441ms (ActiveRecord: 178.6ms)
+
+
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 560ms (Views: 519.6ms | ActiveRecord: 1.1ms)
+
+
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 532ms (Views: 488.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:54:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (80.3ms)
+Completed 200 OK in 3607ms (Views: 3511.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:54:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 756ms (Views: 734.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 04:54:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Er7sIeUT9rLPoGs6oTn79tNE582Zfpdcw8hMhFlgzXIvgG8FZBl1f0WkkdZBuae/o3q3Eogm/M+S+/GMupGF5Q==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: word):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 04:59:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered tool/index.html.erb within layouts/application (72.4ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <!-- TODO:後でこのルーティングURL指定は見直したい -->
+    11:         <%= form_with(@tool, url: tool_index_path,local: true) do |f| %>
+    12:             <div class="form-group">
+    13:                 <label for="selectKind">操作の種類</label>
+    14:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:11:in `_app_views_tool_index_html_erb__129098511061092831_70319559306700'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:02:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered tool/index.html.erb within layouts/application (397.1ms)
+Completed 500 Internal Server Error in 464ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x00007fe918b4cdb0>:0x000056153f4a4110>):
+     8:     <div class="col-6 border-right">
+     9:       <div class="bg-light border border-gray py-2 px-4 m-2">
+    10:         <!-- TODO:後でこのルーティングURL指定は見直したい -->
+    11:         <%= form_with(model: word, url: tool_index_path,local: true) do |f| %>
+    12:             <div class="form-group">
+    13:                 <label for="selectKind">操作の種類</label>
+    14:                 <select class="form-control form-control-sm" id="selectKind">
+  
+app/views/tool/index.html.erb:11:in `_app_views_tool_index_html_erb__129098511061092831_47324628070280'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:03:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (305.6ms)
+Completed 200 OK in 4771ms (Views: 4739.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:04:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/2dQpL/vUP32DloAdSVKIS7ajY3ol4s+e5e423hWZNvCWdOAPuXTMHwKoOyVpRZoXuTdUvnP4K0qpAXTm6csTA==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: tool):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:04:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 680ms (Views: 644.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:04:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"92o5efSzcmBLt3UE5QX7ajzGjdtOkzsd7PR0m5P6OGTKVLpddbnxrcGzj+gFhacjTPjdBF/LUI69x8mTcAtw8w==", "japanese_word"=>"日本語名1", "commit"=>"暫定登録"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: tool):
+  
+app/controllers/tool_controller.rb:16:in `conv_params'
+app/controllers/tool_controller.rb:9:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:05:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 2798ms (Views: 2702.9ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:06:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y28gofFkH9ILigS4CXVLSb4RaPMm29yf/ge2/RNuFV/2UaOFcG6cH4GO/lTp9RcAzi84LDeDtwyvNAv18J9dyA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (3.5ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+Completed 404 Not Found in 35ms (ActiveRecord: 3.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'={"japanese_word"=>"日本語名1"}):
+  
+app/controllers/tool_controller.rb:10:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:07:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  [1m[36mWord Load (2.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (67.0ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:07:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (50.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (14.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 1204ms (Views: 1159.7ms | ActiveRecord: 14.0ms)
+
+
+Completed 200 OK in 3730ms (Views: 3646.8ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:07:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bve2quDqjVmNvrHJursjt0u56kbKL8mtE5FI1ilyirpTyTWOYeAOlAe6SyVaO3/+O4e6mdt3oj5CovXeyoPCLQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 LIMIT 1[0m
+  ↳ (pry):2
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:11
+Completed 404 Not Found in 38780ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'={"japanese_word"=>"日本語名1"}):
+  
+app/controllers/tool_controller.rb:11:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:08:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 813ms (Views: 700.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:08:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HtNEKNIgm6Lr9q2HNkuAMgn+8VEMc9/F2GrPY/jpxLEj7ccMUyoYb2HyV2vWy9x7ecChjh0rtFaJWXJrGxiMJg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:11
+Completed 404 Not Found in 120114ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'={"japanese_word"=>"日本語名1"}):
+  
+app/controllers/tool_controller.rb:11:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:13:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (108.4ms)
+Completed 200 OK in 786ms (Views: 716.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:13:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rFQ0ainaKZV2gVl36vDXWBC5AMiyxZ+MNKJ4Ay0leZeRardOqNCqWPyFo5sKcIsRYIdQF6Od9B9lkcULztQxAA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:11
+Completed 404 Not Found in 412035ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'={"japanese_word"=>"日本語名1"}):
+  
+app/controllers/tool_controller.rb:11:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:21:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (76.8ms)
+Completed 200 OK in 2643ms (Views: 2561.6ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:21:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+9U1vwq6QwA8iMLhAJ42fdB1PqfdVwfIpmN0pVQADJK0dfyfSBqwYr22edkgiSQh3+EJY4tN4xzqjDadqFIpQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:22:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (6.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (84.3ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:22:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (14.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (16.8ms)
+  [1m[36mWord Load (9.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (71.3ms)
+Completed 200 OK in 1025ms (Views: 982.5ms | ActiveRecord: 9.3ms)
+
+
+Completed 200 OK in 3396ms (Views: 3300.3ms | ActiveRecord: 12.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:22:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"93CNVT93skUh/qHQMGVtQ5jqhVHCna9O9FjkQr/N5WbKTg5xvn0xiKv6WzzQ5TEK6NTVjtPFxN2la1lKXDyt8Q==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/controllers/tool_controller.rb:12
+Redirected to http://localhost:3000/words
+Completed 302 Found in 24378ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 05:23:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 507ms (Views: 476.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:24:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (56.4ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:24:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.3ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (75.9ms)
+Completed 200 OK in 3656ms (Views: 3589.8ms | ActiveRecord: 4.3ms)
+
+
+Completed 200 OK in 1313ms (Views: 1271.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:24:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"disVZunnEFEqQDoOWlAHPoQwHwoZnFjmd0bot1bHdrRLFZZCaO2TnKBEwOK60Ft39A5P1QjEM3UmdVW/tTY+Iw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"tool"}, missing required keys: [:id]):
+  
+app/controllers/tool_controller.rb:11:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:26:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (63.5ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:26:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (127.6ms)
+Completed 200 OK in 3619ms (Views: 3543.6ms | ActiveRecord: 4.4ms)
+
+
+Completed 200 OK in 1085ms (Views: 1045.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:26:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DDlOnRL2PK7QwaRC6P55BILj7GbvptzY68IYj17wCVYxB825k/y/Y1rFXq4IfiVN8t28uf7+t0u68aWHvQFBwQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:26:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (67.2ms)
+Completed 200 OK in 950ms (Views: 891.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:27:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 474ms (Views: 454.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:28:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (85.8ms)
+Completed 200 OK in 3092ms (Views: 2985.7ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:28:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCwIvt/oBTN6GSImMnFImJ76YaLMdJYV1iShme4fmiZ5EouaXuKG/vAd2MrS8RTR7sQxfd0s/YaHFxyRDe7SsQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered tool/index.html.erb within layouts/application (72.2ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:             <div class="form-group">
+    13:                 <label for="selectKind">操作の種類</label>
+    14:                 <select class="form-control form-control-sm" id="selectKind">
+    15:                   <% @words.each do |word| %>
+    16:                     <option><%= word.manualKind %></option>
+    17:                   <% end %>
+    18:                 </select>
+  
+app/views/tool/index.html.erb:15:in `block in _app_views_tool_index_html_erb__64694398307284467_70240473457420'
+app/views/tool/index.html.erb:11:in `_app_views_tool_index_html_erb__64694398307284467_70240473457420'
+app/controllers/tool_controller.rb:12:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:30:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (83.6ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:30:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (83.7ms)
+Completed 200 OK in 3573ms (Views: 3450.5ms | ActiveRecord: 4.5ms)
+
+
+Completed 200 OK in 1125ms (Views: 1046.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:30:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dTAJvBrb4OWKZMlPJQJEY9bdb/Tb7bnx+0IxK8UfWjpIDoqYm9FjKABgM6PFghgqpuM/K8q10mKqcYwjJu4SrQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.2ms)
+  Rendered tool/index.html.erb within layouts/application (73.2ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' LIMIT 11[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 36942ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:             <div class="form-group">
+    13:                 <label for="selectKind">操作の種類</label>
+    14:                 <select class="form-control form-control-sm" id="selectKind">
+    15:                   <% @words.each do |word| %>
+    16:                     <option><%= word.manualKind %></option>
+    17:                   <% end %>
+    18:                 </select>
+  
+app/views/tool/index.html.erb:15:in `block in _app_views_tool_index_html_erb___2230402206795121916_69916028951680'
+app/views/tool/index.html.erb:11:in `_app_views_tool_index_html_erb___2230402206795121916_69916028951680'
+app/controllers/tool_controller.rb:13:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:32:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:32:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  [1m[36mWord Load (6.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  [1m[36mWord Load (3.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (54.1ms)
+  Rendered tool/index.html.erb within layouts/application (82.5ms)
+Completed 200 OK in 18264ms (Views: 3329.2ms | ActiveRecord: 6.6ms)
+
+
+Completed 200 OK in 20767ms (Views: 3324.1ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:33:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FE3RmoUI2F76coQkA5iabSIdjwT0X3pg55kcsl7GsM8pc1K+BAJbk3B2fsjjGMYkUiPf2+UHEfO2qqG6vTf4WA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered tool/index.html.erb within layouts/application (147.2ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:             <div class="form-group">
+    13:                 <label for="selectKind">操作の種類</label>
+    14:                 <select class="form-control form-control-sm" id="selectKind">
+    15:                   <% @words.each do |word| %>
+    16:                     <option><%= word.manualKind %></option>
+    17:                   <% end %>
+    18:                 </select>
+  
+app/views/tool/index.html.erb:15:in `block in _app_views_tool_index_html_erb___3275917985517989308_69962375050600'
+app/views/tool/index.html.erb:11:in `_app_views_tool_index_html_erb___3275917985517989308_69962375050600'
+app/controllers/tool_controller.rb:13:in `create'
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:41:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (78.6ms)
+Completed 200 OK in 2715ms (Views: 2616.0ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:41:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FeQv2jPXaNeAuM930ZFETvxmlVjS2AmrY9fgOgAoPZAo2qz+st3rGgq8NZsxERgHjFjFh8OAYjgy5F0y49l1Bw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+No template found for ToolController#create, rendering head :no_content
+Completed 204 No Content in 1531ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:44:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (101.2ms)
+Completed 200 OK in 3253ms (Views: 3154.3ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:44:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wMJggIkwqYUy4WMVhTCxURv+Nnck9Y7uQEX6Wg4CQp/9/OOkCDoqSLjlmfllsO0Ya8BmqDWt5X0RdkdS7fMKCA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (100.9ms)
+Completed 200 OK in 888ms (Views: 880.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:45:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (72.0ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 05:45:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (81.8ms)
+Completed 200 OK in 4565ms (Views: 4469.4ms | ActiveRecord: 6.1ms)
+
+
+Completed 200 OK in 2571ms (Views: 2477.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 05:46:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CfnW3gvK/KbZBSZRz8tPDD3qwVU52XUN2FetUpSWG0U0x1X6isB/a1MB3L0vSxNFTdSRiiiBHp6JZBBad2dT0g==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/controllers/tool_controller.rb:13
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/controllers/tool_controller.rb:13
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT `words`.`english_word` FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/controllers/tool_controller.rb:13
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 147750ms (Views: 539.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:09:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (56.2ms)
+Completed 200 OK in 2951ms (Views: 2870.0ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:09:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C+9kdbU+f73FwR0pkbmbaJJR7RNxRYzb1d8ayaPfWUQ20edRNDT8cE/F58VxOcch4m+9zGAd50iE7KfBQC4R0w==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:13:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.7ms)
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (163.0ms)
+Completed 200 OK in 2659ms (Views: 2619.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:13:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D+h1hWTDCzTPrzJN/ws8/klUQMSw6HooONHZJ2xE8mIy1vah5cmI+UWryKEfi2C3OWoQG6GwEbtp4mQvj7W69Q==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ (pry):4
+  [1m[36mWord Load (3.5ms)[0m  [1m[34mSELECT `words`.`english_word` FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/controllers/tool_controller.rb:13
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 373739ms (Views: 546.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:20:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  [1m[36mWord Load (3.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (71.7ms)
+Completed 200 OK in 1130ms (Views: 947.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:20:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9QmT3nTNotROGFo0353Z5XPCnOV0B2t69W3n6zXdIzXINxD69cchGcQcoNg/HYWsA/zMOmVfAOmkXlrj1ixrog==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 9410ms (Views: 643.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 10:21:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 1747ms (Views: 1679.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:21:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (4.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 1485ms (Views: 1275.9ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:21:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/xj3d7dVNWYIDoVOdOhPyJw7DT7WJHBXe1G77uMekB7CJnRTNl+2q4IKf6KUaBOB7AVd4cd8G8QqYgbmAO/YiQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 14222ms (Views: 500.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:22:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (2.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 935ms (Views: 905.4ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:22:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PzYYFxiiSUWD8uP4jH8bxfv7hjLPEDoaigL+niwLoZECCJszmajKiAn2GRRs/0eMi8XW7d5IUYnbMUOWz/rpBg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:42
+  Rendered tool/index.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 5717ms (Views: 641.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:26:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (5.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (80.2ms)
+Completed 200 OK in 1245ms (Views: 988.3ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:26:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BtGk1UWAwZ7CZ9wZHC7Z0NQPVTFvHkKcELkPga1OTjw77yfxxIpCU0hjJvX8roWZpDEF7n5GKQ9BirKJTr8Gqw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 6155ms (Views: 641.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:26:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rE7YImy6GPsKYb/+vQSLAtrfSl+vGJ6nIj9WSDhPQS+RcFsG7bCbNoBlRRJdhNdLquEagL5A9TRzDOtA274JuA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 9939ms (Views: 705.0ms | ActiveRecord: 2.3ms)
+
+
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 1089811ms (Views: 566.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 10:27:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 2856ms (Views: 2783.5ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:28:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jac0EWxeWBjpessszyCXb/PcqD/I8iedkfetriQrum6wmbc17VTb1WN+McAvoMsmg+L44NmqTA7AxBCmx9ry+Q==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (95.1ms)
+Completed 200 OK in 633ms (Views: 627.9ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:28:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pd2dURX+haBhnEACkKAXNutD/Aw+JsciYaDNkIKC7f8A4x51lPQGbeuYuu5wIEt/m32s0y9+rLEwk3CYYXOlaA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 1200ms (Views: 1192.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:28:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o301O9O6agRFsB1LeTGHTxk2N8gi/yqexsEz7GbMn92eQ7YfUrDpyc+056eZsdsGaQhnFzOnQQ2X8o7khT3XSg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (108.1ms)
+Completed 200 OK in 941ms (Views: 936.4ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:28:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YfkTma8PvLoxgnkrJdXqyR97NgLnwaHpS4drJZrgRjpcx5C9LgU/d7uGg8fFVbaAb0Vm3faZynoatNYteREOrQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (79.6ms)
+Completed 200 OK in 1490ms (Views: 1484.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:29:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RRKMz438SFicOxzQnH9IAn/XeLCl04lNlMH9Ll1CH/h4LA/rDPbLlRY/5jx8/xRLD+kob7SL4t7F8kAmvrNXbw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  [1m[36mWord Load (2.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (122.9ms)
+Completed 200 OK in 1458ms (Views: 1444.7ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:29:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"33OBDuu/6qEzSpsR/vtVBHAA9g/m+kAxDFldOeAlHfHiTQIqarVpbLlOYf0eewlNAD6m0PeiK6JdauAxA9RVZg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:42
+  Rendered tool/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 1385ms (Views: 1381.0ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:29:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5yFq6Wvk0TZM/fuPHFPUTyaz6AOTOArdVswSEwAu9YWogaPJKUQiVM3DQLc8RMYTKSffx8Ui7gkaI1Ar/HzQQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:42
+  Rendered tool/index.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 1179ms (Views: 1173.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:29:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cCK/f/7CPlgtywRzRO9Als2m/fDkA1u+D7S8bqBqdP1NHDxbf8i9lafP/p+kbxzfvZitL/VbMC1ehwFmQ5s8ag==", "word"=>{"japanese_word"=>""}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = ''[0m
+  ↳ app/views/tool/index.html.erb:42
+  Rendered tool/index.html.erb within layouts/application (122.3ms)
+Completed 200 OK in 1492ms (Views: 1486.6ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:29:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tk/fgSd5+Q5CwqqJsDKS+mm2JC9bz6Xswqa0Y2Y4NKxzcVylpnN6w8jGUGVQss6zGYh08EqXzn+TlQlrhcl8Ow==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (3.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:42
+  Rendered tool/index.html.erb within layouts/application (125.4ms)
+Completed 200 OK in 1282ms (Views: 1276.0ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:30:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ouB6L0T5B9gnJ1uyvFyM2zjUf9NKxeS9JLAYWlLTPvOf3vkLxfOEFa0joV5c3NCSSOovDFudjy51g6VSsSJ2ZA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 852ms (Views: 848.7ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:30:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNJGjWFSK5yZ/GLdRi303jw2M6ZTFCOjCmhL/c10FE197MWp4FioURP4mDGmraiXTAhjeUJMSDBbW/b1LoVc2g==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 1133ms (Views: 1127.3ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:30:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KB9HPugdygQTuqZ4mz1Fm5xZjlMbEd0Hcnovx1+BrQcVIcQaaRdJyZm+XJR7vRnS7GfejApJtpQjSZLPvHDlkA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  [1m[36mWord Load (1.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:42
+  Rendered tool/index.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 871ms (Views: 862.8ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:32:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"agi3rQZb5E+9uP3BQXR4XdxuPl5r4DlxaxdttwmVH1NXNjSJh1Fngje8By2h9CQUrFBugXq4UuI6JNC/6mRXxA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (4.6ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (110.5ms)
+Completed 200 OK in 1459ms (Views: 1451.3ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:33:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3UP2qAlv67boqb/zmsilt5emA/iKfFHnO0HqbQU38RTgfXWMiGVoe2KtRR96SPn+55hTJ5skOnRqcldl5sa5gw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (133.2ms)
+Completed 200 OK in 1230ms (Views: 1225.8ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:33:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWALf6BKqQDCvdU/0aKIHcBiK0bVZ0bmtN/UVeGIUZ5sXohbIUAqzUi5L9MxItRUsFx7mcQ/LXXl7GldAnkZCQ==", "word"=>{"japanese_word"=>""}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = ''[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (116.5ms)
+Completed 200 OK in 1703ms (Views: 1694.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:33:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RTpTxlEygjqHHwqNDfVhWX3sWsfstlUEzs8nXQtSGjt4BNDi0DgB9w0b8GHtdT0QDdIKGP3uPpef/JpV6KNSrA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 671ms (Views: 666.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:34:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8dt0MucRn1rQmauJfDpmdk071v1hXtRzrGaf/KqJEjTM5fcWZhscl1qdUWWcujo/PQWGInAGv+D9VSL0SXhaow==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (105.9ms)
+Completed 200 OK in 668ms (Views: 662.9ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:34:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Jrr9XyRhihQi9OvgmxYkcPO70TIGGaJkwH6kyvXdwrBpGjR/ZsF5dqPKUNi7ATYs/C/m9lADRrCMkebyCY/nQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (100.9ms)
+Completed 200 OK in 1140ms (Views: 1134.3ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:38:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O/JggD1uFjJ5X6zWVZDDE3u4WYXVYTdwGuShdm9c5iMGzOOkvGSV//NbVjq1EJ9aC4YJWsQ5XONL1xx+jK2utA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (3.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (72.8ms)
+Completed 200 OK in 758ms (Views: 751.3ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:38:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MsyGZv6B1A0LRjVWrKgBhIAQkgAk3ISkIAYXnI60+xAP8gVCf4tXwIFCz7pMKF3N8C7C3zWE7zdxNaqUbUWzhw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (3.6ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (60.7ms)
+Completed 200 OK in 600ms (Views: 594.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:38:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (119.0ms)
+Completed 200 OK in 739ms (Views: 628.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:38:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LA9qGDOcqYq8vovZ+iO1GvkQWkF4o8wD5cNimzkMePURMek8spYqRza6cTUao+lTiS4Knmn7p5C08N+T2v0wYg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (101.3ms)
+Completed 200 OK in 717ms (Views: 707.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:39:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (57.2ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 10:39:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (8.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (65.7ms)
+Completed 200 OK in 3489ms (Views: 3415.0ms | ActiveRecord: 3.9ms)
+
+
+Completed 200 OK in 1411ms (Views: 1353.7ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:39:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XtvC/DXOr99sBVeNZ1zYkX5JMxZvEUhTFiETpfEFHxtj5UHYtMQsEuYBrWGH3ITYDndjyX5JI8BHEq6tEvRXjA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/controllers/tool_controller.rb:13
+Completed 500 Internal Server Error in 86022ms (ActiveRecord: 0.6ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/tool_controller.rb:13:in `create'
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:41:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XtvC/DXOr99sBVeNZ1zYkX5JMxZvEUhTFiETpfEFHxtj5UHYtMQsEuYBrWGH3ITYDndjyX5JI8BHEq6tEvRXjA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Completed 500 Internal Server Error in 11096ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xEF" from ASCII-8BIT to UTF-8):
+  
+app/controllers/tool_controller.rb:13:in `create'
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:42:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XtvC/DXOr99sBVeNZ1zYkX5JMxZvEUhTFiETpfEFHxtj5UHYtMQsEuYBrWGH3ITYDndjyX5JI8BHEq6tEvRXjA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Completed 500 Internal Server Error in 6266ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xEF" from ASCII-8BIT to UTF-8):
+  
+app/controllers/tool_controller.rb:13:in `create'
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:42:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XtvC/DXOr99sBVeNZ1zYkX5JMxZvEUhTFiETpfEFHxtj5UHYtMQsEuYBrWGH3ITYDndjyX5JI8BHEq6tEvRXjA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+Completed 500 Internal Server Error in 6682ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xEF" from ASCII-8BIT to UTF-8):
+  
+app/controllers/tool_controller.rb:13:in `create'
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:42:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XtvC/DXOr99sBVeNZ1zYkX5JMxZvEUhTFiETpfEFHxtj5UHYtMQsEuYBrWGH3ITYDndjyX5JI8BHEq6tEvRXjA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ (pry):5
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 592247ms (Views: 618.2ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:52:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/tBTaZ43dOzYL51MVkMHJk9WJ3HYqJdlEC3/I2U6wYbD7tBNHz33IVIrZ6C2w1tvP2h3rsnw/PZBHkIrhsuJEQ==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 4232ms (Views: 508.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:52:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lB04Fcn5KX01X8RwW1T+o/clIN6Rgsw67wktF5ZUUH2pI7sxSPOqsL9bPpy71KLqhxtwAYDap6m+OpAfdaUY6g==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 9238ms (Views: 526.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:53:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OfD6hMASXBw1ans5L0pfYYTEXn+s2fQ1ykqcBG7rh1UEznmgQRjf0b9ugdXPygMo9PoOoL2Bn6abeSEMjRrPwg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 4915ms (Views: 1579.8ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:56:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gdlInZIzd5Mqn3LunLeKOQ0JCWwJNGXRfkGoyFRM5eC858u5Ezn0XqCbiAJ8N9ZwfTdZsxhsDkIvchXAt72tdw==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1'[0m
+  ↳ app/views/tool/index.html.erb:43
+  Rendered tool/index.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 7393ms (Views: 587.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 10:58:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IAqT6TKLqwVklBRdQJmjL49/dY5WvOT0GR/JvjZ/iEYdNBDNs4EoyO6Q7rGgGf9m/0ElUUfkj2dILHS21Y7A0Q==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+Started GET "/" for 172.18.0.1 at 2020-01-12 11:00:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (67.2ms)
+Started GET "/" for 172.18.0.1 at 2020-01-12 11:00:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (5.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (91.7ms)
+Completed 200 OK in 3350ms (Views: 3275.3ms | ActiveRecord: 4.6ms)
+
+
+Completed 200 OK in 932ms (Views: 876.5ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 11:00:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IRIkfYjmGt1j24RgrhAp9UZpZfXt2YwWPg7Vs4p/l78cLKdZCeyZEOnffoxOkHW8Nlc1KvyB54VvPWi7aY7fKA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 637ms (Views: 614.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 172.18.0.1 at 2020-01-12 11:05:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 1313ms (Views: 1039.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/" for 172.18.0.1 at 2020-01-12 11:05:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2020-01-12 11:07:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 452ms (Views: 429.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&word%5Bjapanese_word%5D=%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%90%8D1&commit=%E6%9A%AB%E5%AE%9A%E7%99%BB%E9%8C%B2" for 172.18.0.1 at 2020-01-12 11:08:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Parameters: {"utf8"=>"✓", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.6ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 574ms (Views: 529.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:25:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (3.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 621ms (Views: 555.2ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 11:25:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EtUC9o0LSTLYZsppHBvkls16glwvwN8SHqVtaXAWQpkv64HSDAHK/1JiMIX8m7jfvUTSgz6YtIFPltBhk+cKDg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (3.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 685ms (Views: 671.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:26:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (3.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (233.9ms)
+Completed 200 OK in 1464ms (Views: 1418.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 11:26:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (132.7ms)
+Completed 200 OK in 1104ms (Views: 1056.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:26:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (3.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 525ms (Views: 483.5ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 11:26:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKtk8RdUFE6rYblZ4XV/fMkJlAw3P7NRZp3h1UBEmBbILVbNOOQDo2KELiMuNgbLiVuGDichk2tDckxy1nUnbg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (5.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 549ms (Views: 530.0ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:34:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (168.6ms)
+Completed 200 OK in 1396ms (Views: 1352.6ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 11:34:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"11a0UuVrPhyjt2/cgfxZLE06orryf1RZghOKOICAfcPqaDd2ZGG90SmzlTBhfAVlPQTyZeMnP8rTIDcwY3E1VA==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 1206ms (Views: 1186.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:35:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 2876ms (Views: 2812.2ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/tool" for 172.18.0.1 at 2020-01-12 11:35:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozC60if6uSrYScBZEMgscuEv6F1gGJGv9/z4Z/bShcGeDjn2pvA651JNOrXwSHA7kRG4gnFA+jymz0VvFSPNVg==", "word"=>{"japanese_word"=>"日本語名1"}, "commit"=>"暫定登録"}
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`japanese_word` = '日本語名1' ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:10
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 1028ms (Views: 1006.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 11:43:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (96.9ms)
+Completed 200 OK in 808ms (Views: 760.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:43:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 717ms (Views: 689.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 11:43:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 536ms (Views: 504.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-12 11:43:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:15
+  Rendered tool/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 443ms (Views: 411.8ms | ActiveRecord: 1.2ms)
+
+
