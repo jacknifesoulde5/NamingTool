@@ -3811,3 +3811,864 @@ Processing by WordsController#edit as HTML
 Completed 200 OK in 536ms (Views: 499.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:34:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (18.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (3.6ms)
+  [1m[36mWord Load (5.4ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:67
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:91
+  Rendered words/index.html.erb within layouts/application (669.7ms)
+Completed 200 OK in 6874ms (Views: 6758.8ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:36:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+uffer.append=( f.submit,class: "btn btn-outline-dark mb-2", 
+                              ^
+/app/app/views/words/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+: "btn btn-outline-dark mb-2", "検索" );@output_buffer.saf
+                              ^
+/app/app/views/words/index.html.erb:26: syntax error, unexpected tLABEL, expecting '='
+uffer.append=( f.submit,class: "btn btn-outline-dark mb-2", 
+                              ^
+/app/app/views/words/index.html.erb:26: syntax error, unexpected ',', expecting ')'
+: "btn btn-outline-dark mb-2", "クリア" );@output_buffer.
+                              ^):
+  
+app/views/words/index.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+app/views/words/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/words/index.html.erb:26: syntax error, unexpected tLABEL, expecting '='
+app/views/words/index.html.erb:26: syntax error, unexpected ',', expecting ')'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:37:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+uffer.append=( f.submit,class: 'btn btn-outline-dark mb-2', 
+                              ^
+/app/app/views/words/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+: 'btn btn-outline-dark mb-2', "検索" );@output_buffer.saf
+                              ^
+/app/app/views/words/index.html.erb:26: syntax error, unexpected tLABEL, expecting '='
+uffer.append=( f.submit,class: 'btn btn-outline-dark mb-2', 
+                              ^
+/app/app/views/words/index.html.erb:26: syntax error, unexpected ',', expecting ')'
+: 'btn btn-outline-dark mb-2', "クリア" );@output_buffer.
+                              ^):
+  
+app/views/words/index.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+app/views/words/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/words/index.html.erb:26: syntax error, unexpected tLABEL, expecting '='
+app/views/words/index.html.erb:26: syntax error, unexpected ',', expecting ')'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:47:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:25: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+r.append=( f.submit, "検索", class: 'btn btn-outline-dark 
+                              ^
+/app/app/views/words/index.html.erb:26: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+ppend=( f.submit, "クリア",　class: 'btn btn-outline-dar
+                              ^):
+  
+app/views/words/index.html.erb:25: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/views/words/index.html.erb:26: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:48:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (282.4ms)
+Completed 200 OK in 833ms (Views: 795.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:50:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (1.8ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (406.7ms)
+Completed 200 OK in 1196ms (Views: 1142.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:51:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (301.3ms)
+Completed 200 OK in 894ms (Views: 824.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:55:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:26: syntax error, unexpected keyword_class, expecting ')'
+クリア", type: :reset class: 'btn btn-outline-dark mb-2' 
+                              ^):
+  
+app/views/words/index.html.erb:26: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:55:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (3.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (432.6ms)
+Completed 200 OK in 1562ms (Views: 1492.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:56:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (508.1ms)
+Completed 200 OK in 1991ms (Views: 1853.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:57:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (763.9ms)
+Completed 200 OK in 2368ms (Views: 2289.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:58:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (49.1ms)
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:71
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:95
+  Rendered words/index.html.erb within layouts/application (571.1ms)
+Completed 200 OK in 1797ms (Views: 1703.9ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-11 23:58:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:73
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:97
+  Rendered words/index.html.erb within layouts/application (550.7ms)
+Completed 200 OK in 1675ms (Views: 1600.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:00:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (650.0ms)
+Completed 200 OK in 1760ms (Views: 1664.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:00:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (445.6ms)
+Completed 200 OK in 1471ms (Views: 1280.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:01:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:01:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:04:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:04:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:05:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:05:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:05:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/words/index.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:05:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (250.5ms)
+Completed 200 OK in 1166ms (Views: 1126.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:06:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (215.6ms)
+Completed 200 OK in 1153ms (Views: 899.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:06:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.9ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (488.9ms)
+Completed 200 OK in 1878ms (Views: 1791.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:07:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (2.6ms)[0m  [1m[34mSELECT  `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (292.1ms)
+Completed 200 OK in 904ms (Views: 863.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:08:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (573.4ms)
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:08:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (376.9ms)
+Completed 200 OK in 4179ms (Views: 4098.7ms | ActiveRecord: 14.6ms)
+
+
+Completed 200 OK in 2007ms (Views: 1964.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:08:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (284.2ms)
+Completed 200 OK in 1051ms (Views: 1008.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:13:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 3.2ms)
+
+
+  
+NameError (undefined local variable or method `bindng' for #<WordsController:0x00007f7970b24760>):
+  
+app/controllers/words_controller.rb:4:in `index'
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:13:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (381.0ms)
+Completed 200 OK in 46263ms (Views: 2712.0ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:14:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (2.0ms)
+  [1m[36mWord Load (2.1ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (527.8ms)
+Completed 200 OK in 447474ms (Views: 1814.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:23:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.8ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (200.9ms)
+Completed 200 OK in 19432ms (Views: 649.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:31:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:31:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (385.2ms)
+Completed 200 OK in 39343ms (Views: 2805.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:34:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (222.3ms)
+Completed 200 OK in 227625ms (Views: 697.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:35:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/controllers/words_controller.rb:6
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (202.3ms)
+Completed 200 OK in 72853ms (Views: 652.5ms | ActiveRecord: 4.1ms)
+
+
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.1ms)
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (235.3ms)
+Completed 200 OK in 4110ms (Views: 736.9ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:38:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (367.5ms)
+Completed 200 OK in 7680ms (Views: 3038.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:38:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:38:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (156.2ms)
+Completed 200 OK in 95171ms (Views: 558.9ms | ActiveRecord: 7.1ms)
+
+
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.1ms)
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (212.8ms)
+Completed 200 OK in 20427ms (Views: 619.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:40:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (3.3ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (210.7ms)
+Completed 200 OK in 32308ms (Views: 601.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:41:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:41:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (239.0ms)
+Completed 200 OK in 23684ms (Views: 746.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:42:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (244.4ms)
+Completed 200 OK in 15697ms (Views: 722.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:42:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (5.6ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (589.6ms)
+Completed 200 OK in 53094ms (Views: 1874.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:45:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (1.4ms)
+  [1m[36mWord Load (3.0ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (429.8ms)
+Completed 200 OK in 415552ms (Views: 1459.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:52:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  [1m[36mWord Load (6.6ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 LIMIT 1[0m
+  ↳ (pry):10
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/words_controller.rb:4
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 LIMIT 1[0m
+  ↳ (pry):12
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (284.5ms)
+Completed 200 OK in 258512ms (Views: 1392.8ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:57:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.6ms)
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (239.8ms)
+Completed 200 OK in 4047ms (Views: 667.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 00:57:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (3.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (218.3ms)
+Completed 200 OK in 18507ms (Views: 700.8ms | ActiveRecord: 4.6ms)
+
+
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.1ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (187.5ms)
+Completed 200 OK in 1028528ms (Views: 533.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:59:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:59:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+Started GET "/words" for 172.18.0.1 at 2020-01-12 00:59:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by WordsController#index as HTML
+  Rendering words/index.html.erb within layouts/application
+  Rendering words/index.html.erb within layouts/application
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  Rendered words/_navbar.html.erb (0.2ms)
+  Rendered words/_navbar.html.erb (0.1ms)
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[36mWord Load (2.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  [1m[36mWord Load (8.5ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  ↳ app/views/words/index.html.erb:77
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  [1m[35m (29.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:101
+  Rendered words/index.html.erb within layouts/application (783.8ms)
+  Rendered words/index.html.erb within layouts/application (818.8ms)
+  Rendered words/index.html.erb within layouts/application (762.5ms)
+Completed 200 OK in 49035ms (Views: 4938.7ms | ActiveRecord: 42.9ms)
+
+
+Completed 200 OK in 27121ms (Views: 4927.4ms | ActiveRecord: 5.0ms)
+
+
+Completed 200 OK in 51531ms (Views: 4943.1ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:00:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 LIMIT 1[0m
+  ↳ (pry):3
+  [1m[36mWord Load (12.7ms)[0m  [1m[34mSELECT DISTINCT `words`.* FROM `words` WHERE `words`.`japanese_word` LIKE '%12%'[0m
+  ↳ app/controllers/words_controller.rb:5
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.7ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` WHERE `words`.`japanese_word` LIKE '%12%' LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:77
+  Rendered words/index.html.erb within layouts/application (83.4ms)
+Completed 200 OK in 82395ms (Views: 510.7ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=12&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:03:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"12", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` WHERE `words`.`japanese_word` LIKE '%12%' LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 681ms (Views: 633.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=4&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:03:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"4", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` WHERE `words`.`japanese_word` LIKE '%4%' LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (114.2ms)
+Completed 200 OK in 744ms (Views: 684.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:03:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (1.2ms)
+  [1m[36mWord Load (10.6ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (258.5ms)
+Completed 200 OK in 869ms (Views: 772.8ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=&q%5Benglish_word_cont%5D=d&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:03:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"", "english_word_cont"=>"d", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.8ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` WHERE `words`.`english_word` LIKE '%d%' LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (98.6ms)
+Completed 200 OK in 680ms (Views: 621.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=e&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:03:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"", "english_word_cont"=>"", "use_cont"=>"e"}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (1.5ms)
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` WHERE `words`.`use` LIKE '%e%' LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  Rendered words/index.html.erb within layouts/application (67.2ms)
+Completed 200 OK in 586ms (Views: 500.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words?utf8=%E2%9C%93&q%5Bjapanese_word_cont%5D=&q%5Benglish_word_cont%5D=&q%5Buse_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.18.0.1 at 2020-01-12 01:04:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WordsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"japanese_word_cont"=>"", "english_word_cont"=>"", "use_cont"=>""}, "commit"=>"検索"}
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/_navbar.html.erb (0.4ms)
+  [1m[36mWord Load (3.3ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/words/index.html.erb:52
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT `words`.`id`) FROM `words`[0m
+  ↳ app/views/words/index.html.erb:76
+  Rendered words/index.html.erb within layouts/application (180.3ms)
+Completed 200 OK in 800ms (Views: 750.5ms | ActiveRecord: 4.0ms)
+
+

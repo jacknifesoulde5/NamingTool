@@ -6,31 +6,33 @@
 
   <div class="border rounded-lg mb-4">
     <div class="bg-dark text-white p-2">検索条件</div>
-    <form class="px-4 pt-4 pb-2 mb-2">
-      <div class="form-group row">
-          <label class="col-2" for="inputJapanese">日本語</label>
-          <div class="col-5">
-            <input type="text" class="form-control form-control-sm" id="inputJapanese">
-          </div>
+
+    <%= search_form_for @q,class: "px-4 pt-4 pb-2 mb-2" do |f| %>
+      <div class="row">
+        <%= f.label :japanese_word, "日本語",class: 'col-2' %>
+        <div class="col-5">
+          <%= f.search_field :japanese_word_cont,class: 'form-control form-control-sm' %>
+        </div>
       </div>
-      <div class="form-group row">
-          <label class="col-2" for="inputEnglish">英語</label>
-          <div class="col-5">
-            <input type="text" class="form-control form-control-sm" id="inputEnglish">
-          </div>
+      <div class="row">
+        <%= f.label :english_word, "英語",class: 'col-2' %>
+        <div class="col-5">
+          <%= f.search_field :english_word_cont,class: 'form-control form-control-sm' %>
+        </div>
       </div>
-      <div class="form-group row">
-          <label class="col-2" for="inputUsed">用途</label>
-          <div class="col-7">
-            <input type="text" class="form-control form-control-sm" id="inputUsed">
-          </div>
+      <div class="row">
+        <%= f.label :use, "用途",class: 'col-2' %>
+        <div class="col-5">
+          <%= f.search_field :use_cont,class: 'form-control form-control-sm' %>
+        </div>
       </div>
       <!-- 検索ボタン -->
       <div class="text-center">
-        <button type="button" class="btn btn-outline-dark mb-2">検索</button>
-        <button type="button" class="btn btn-outline-dark mb-2">クリア</button>
-      </div>
-    </form>
+        <%= f.submit "検索", class: 'btn btn-outline-dark mb-2' %>
+        <%= f.button "クリア", type: :reset, class: 'btn btn-outline-dark mb-2' %>
+      </div>  
+    <% end %>
+
   </div>
 
   <!-- 新規作成リンク -->

@@ -1,6 +1,7 @@
 class WordsController < ApplicationController
   def index
-    @words = Word.page(params[:page])
+    @q = Word.ransack(params[:q])
+    @words = @q.result(distinct: true).page(params[:page])
   end
 
   def edit
