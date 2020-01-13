@@ -7,23 +7,20 @@
   <div class="row m-1">
     <div class="col-6 border-right">
       <div class="bg-light border border-gray py-2 px-4 m-2">
-        <!-- TODO:後でこのルーティングURL指定は見直したい -->
         <%= form_with(model: @word, url: tool_index_path,local: true) do |f| %>
             <div class="form-group">
-                <label for="selectKind">操作の種類</label>
-                <select class="form-control form-control-sm" id="selectKind">
-                  <% @words.each do |word| %>
-                    <option><%= word.manualKind %></option>
-                  <% end %>
-                </select>
+              <%= f.label :manualKind,"操作の種類"%>
+              <%= f.select :manualKind,
+                @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+                { include_blank: true },
+                class: 'form-control form-control-sm select-parent' %>
             </div>
             <div class="form-group">
-                <label for="selectMethod">具体的な操作方法</label>
-                <select class="form-control form-control-sm" id="selectMethod">
-                  <% @words.each do |word| %>
-                    <option><%= word.concreteMethod %></option>
-                  <% end %>
-                </select>
+              <%= f.label :concreteMethod,"具体的な操作方法"%>
+              <%= f.select :concreteMethod,
+                @words.map { |word| [word.concreteMethod,word.id]} ,
+                { include_blank: true },
+                class: 'form-control form-control-sm select-children' %>
             </div>
             <div class="form-group">
               <%= f.label :japanese_word,"操作対象"%>

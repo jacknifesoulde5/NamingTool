@@ -15,6 +15,12 @@ class ToolController < ApplicationController
     render :index
   end
 
+  #TODO: 本当にこのメソッド名で良いのか。
+  def show
+    manualKind = Word.where(id: params[:id]).first["manualKind"]
+    render json: Word.where(manualKind: manualKind).select(:concreteMethod,:id)
+  end
+
   private
 
   def conv_params
