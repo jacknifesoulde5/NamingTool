@@ -7,12 +7,10 @@ class ToolController < ApplicationController
   #TODO: これって変換処理なのにRESTを守ってcreateに作るのか。
   #      CRUDとは違うような気がするが。
   def create
-    @convWord = Word.where(conv_params).first["english_word"]
     #TODO:このように書くかは別途検討
     @words = Word.all
     @word = Word.new(conv_params)
-    #redirect_to root_path
-    render :index
+    render json: Word.where(conv_params).select(:english_word)
   end
 
   #TODO: 本当にこのメソッド名で良いのか。

@@ -17,17 +17,15 @@
             </div>
             <div class="form-group">
               <%= f.label :concreteMethod,"具体的な操作方法"%>
-              <%= f.select :concreteMethod,
-                @words.map { |word| [word.concreteMethod,word.id]} ,
+              <!-- TODO:セレクトボックス空白のもっと良い書き方がありそう -->
+              <%= f.select :concreteMethod,[""],
                 { include_blank: true },
-                class: 'form-control form-control-sm select-children' %>
+                class: 'form-control form-control-sm select-children change_field' %>
             </div>
             <div class="form-group">
               <%= f.label :japanese_word,"操作対象"%>
-              <%= f.text_field :japanese_word, class: 'form-control form-control-sm' %>
+              <%= f.text_field :japanese_word, class: 'form-control form-control-sm change_field' %>
             </div>
-            <!-- 処理ボタン -->
-            <%= f.submit "暫定登録", class: 'btn btn-outline-dark mb-2 mx-auto d-block' %>
         <% end %>
       </div>
     </div>
@@ -40,7 +38,7 @@
               class="form-control" 
               id="inputMethodName" 
               rows="7" 
-              readonly><%= @convWord if @convWord.presence %>
+              readonly>
             </textarea>
           </div>
         </form>
