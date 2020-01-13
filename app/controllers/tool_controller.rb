@@ -1,6 +1,6 @@
 class ToolController < ApplicationController
   def index
-    @words = Word.all
+    @words = Word.all.to_a.uniq {|word| word.manualKind}
     @word = Word.new
   end
 

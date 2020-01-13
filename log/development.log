@@ -246,3 +246,556 @@ Processing by ToolController#show as JSON
 Completed 200 OK in 11ms (Views: 3.6ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:08:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ (pry):6
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT `words`.`manualKind` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT DISTINCT `words`.`manualKind` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT DISTINCT `words`.`manualKind`, `words`.`id` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (2.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT DISTINCT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT  DISTINCT `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered tool/index.html.erb within layouts/application (123.6ms)
+Completed 200 OK in 846966ms (Views: 10495.4ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:23:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  [1m[36mWord Load (1.7ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (93.2ms)
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'app_development.words.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `map'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__22480401220142957_47391955382140'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__22480401220142957_47391955382140'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:24:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:25:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:30:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (6.9ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (2.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (3.5ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (1.7ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT `words`.`manualKind` FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ (pry):6
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT `words`.`manualKind`, `words`.`id` FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ (pry):7
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `words`.`manualKind`, `words`.`id` FROM `words` GROUP BY `words`.`manualKind`, `words`.`id`[0m
+  ↳ (pry):8
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.`manualKind`, `words`.`id` FROM `words` GROUP BY `words`.`manualKind`, `words`.`id`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.`manualKind`, `words`.`id` FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  `words`.`manualKind`, `words`.`id` FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:4
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.7ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (86.3ms)
+Completed 500 Internal Server Error in 879837ms (ActiveRecord: 49.8ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'app_development.words.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `map'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__469345799110069784_70225102626060'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__469345799110069784_70225102626060'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:58:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:36
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered tool/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 2690ms (Views: 2613.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/tool/1" for 172.18.0.1 at 2020-01-13 05:58:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:20
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する1'[0m
+  ↳ app/controllers/tool_controller.rb:21
+Completed 200 OK in 23ms (Views: 5.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:58:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:36
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered tool/index.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 842ms (Views: 793.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 05:59:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:37
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:37
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:37
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:37
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered tool/index.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 181286ms (Views: 2358.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:03:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:37
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered tool/index.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 411182ms (Views: 4510.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:11:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `words`.`id`, `words`.`manualKind`, `words`.`concreteMethod` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:3
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (86.1ms)
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `manualKind' for [1, "取得する1", "DB1"]:Array):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `block (2 levels) in _app_views_tool_index_html_erb__2727464920089304486_47304125971480'
+app/views/tool/index.html.erb:14:in `map'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__2727464920089304486_47304125971480'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__2727464920089304486_47304125971480'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:13:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:20:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `words`.`id`, `words`.`manualKind`, `words`.`concreteMethod` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered tool/index.html.erb within layouts/application (86.2ms)
+Completed 500 Internal Server Error in 6661ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool", :id=>nil}, missing required keys: [:id]):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.each { |word| word.each{ |manualKind,id,concreteMethod| [manualKind,id,data: { children_path: tool_path(id) }]} } ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `block (3 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+app/views/tool/index.html.erb:14:in `each'
+app/views/tool/index.html.erb:14:in `block (2 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+app/views/tool/index.html.erb:14:in `each'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `words`.`id`, `words`.`manualKind`, `words`.`concreteMethod` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered tool/index.html.erb within layouts/application (56.1ms)
+Completed 500 Internal Server Error in 505432ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool", :id=>nil}, missing required keys: [:id]):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.each { |word| word.each{ |manualKind,id,concreteMethod| [manualKind,id,data: { children_path: tool_path(id) }]} } ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `block (3 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+app/views/tool/index.html.erb:14:in `each'
+app/views/tool/index.html.erb:14:in `block (2 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+app/views/tool/index.html.erb:14:in `each'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__1830713132099385939_70283282494860'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:22:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT `words`.`id`, `words`.`manualKind`, `words`.`concreteMethod` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (38.6ms)
+Completed 500 Internal Server Error in 267977ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tool", :id=>nil}, missing required keys: [:id]):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.each { |word| word.each{ |manualKind,id,concreteMethod| [manualKind,id,data: { children_path: tool_path(id) }]} } ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `block (3 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283286298240'
+app/views/tool/index.html.erb:14:in `each'
+app/views/tool/index.html.erb:14:in `block (2 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283286298240'
+app/views/tool/index.html.erb:14:in `each'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__1830713132099385939_70283286298240'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__1830713132099385939_70283286298240'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:26:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT `words`.`id`, `words`.`manualKind`, `words`.`concreteMethod` FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:4
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered tool/index.html.erb within layouts/application (102.6ms)
+Completed 500 Internal Server Error in 463743ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `manualKind' for [1, "取得する1", "DB1"]:Array):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `block (2 levels) in _app_views_tool_index_html_erb__1830713132099385939_70283281061680'
+app/views/tool/index.html.erb:14:in `map'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb__1830713132099385939_70283281061680'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb__1830713132099385939_70283281061680'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:34:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (105.6ms)
+Completed 200 OK in 3473ms (Views: 3389.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/tool/1" for 172.18.0.1 at 2020-01-13 06:35:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:22
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する1'[0m
+  ↳ app/controllers/tool_controller.rb:23
+Completed 200 OK in 19ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/tool/2" for 172.18.0.1 at 2020-01-13 06:35:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:22
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する2'[0m
+  ↳ app/controllers/tool_controller.rb:23
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:38:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ (pry):2
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (198.3ms)
+Completed 200 OK in 126516ms (Views: 4339.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:40:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (2.8ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (106.0ms)
+Completed 500 Internal Server Error in 3402ms (ActiveRecord: 6.2ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'app_development.words.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `map'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb___3768813613721226729_70043972260740'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___3768813613721226729_70043972260740'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:43:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (11.6ms)[0m  [1m[34mSELECT :id,:manualKind,:concreteMethod FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT  :id,:manualKind,:concreteMethod FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT :id,:manualKind,:concreteMethod,max(*) as manualKind_count FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT  :id,:manualKind,:concreteMethod,max(*) as manualKind_count FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (8.3ms)[0m  [1m[34mSELECT max(:id) as maxId,:manualKind,max(:concreteMethod) as maxMethod FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT  max(:id) as maxId,:manualKind,max(:concreteMethod) as maxMethod FROM `words` GROUP BY `words`.`manualKind` LIMIT 11[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (16.5ms)[0m  [1m[34mSELECT max(words.id) as maxId,manualKind,max(words.concreteMethod) as maxMethod FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/controllers/tool_controller.rb:5
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ (pry):6
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ (pry):7
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ (pry):8
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`[0m
+  ↳ app/views/tool/index.html.erb:14
+  Rendered tool/index.html.erb within layouts/application (85.6ms)
+Completed 500 Internal Server Error in 738752ms (ActiveRecord: 43.9ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'app_development.words.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by: SELECT `words`.* FROM `words` GROUP BY `words`.`manualKind`):
+    11:             <div class="form-group">
+    12:               <%= f.label :manualKind,"操作の種類"%>
+    13:               <%= f.select :manualKind,
+    14:                 @words.map { |word| [word.manualKind,word.id,data: { children_path: tool_path(word) }]} ,
+    15:                 { include_blank: true },
+    16:                 class: 'form-control form-control-sm select-parent' %>
+    17:             </div>
+  
+app/views/tool/index.html.erb:14:in `map'
+app/views/tool/index.html.erb:14:in `block in _app_views_tool_index_html_erb___3768813613721226729_70043973163020'
+app/views/tool/index.html.erb:10:in `_app_views_tool_index_html_erb___3768813613721226729_70043973163020'
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:56:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (2.2ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:3
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.6ms)
+  Rendered tool/index.html.erb within layouts/application (69.8ms)
+Completed 200 OK in 3000ms (Views: 2896.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/tool/1" for 172.18.0.1 at 2020-01-13 06:56:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (4.0ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:20
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する1'[0m
+  ↳ app/controllers/tool_controller.rb:21
+Completed 200 OK in 43ms (Views: 4.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/tool/2" for 172.18.0.1 at 2020-01-13 06:56:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 2 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:20
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する2'[0m
+  ↳ app/controllers/tool_controller.rb:21
+Completed 200 OK in 10ms (Views: 3.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tool/3" for 172.18.0.1 at 2020-01-13 06:56:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 3 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:20
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する3'[0m
+  ↳ app/controllers/tool_controller.rb:21
+Completed 200 OK in 18ms (Views: 7.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/tool" for 172.18.0.1 at 2020-01-13 06:56:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ToolController#index as HTML
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT `words`.* FROM `words`[0m
+  ↳ app/controllers/tool_controller.rb:3
+  Rendering tool/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered tool/index.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 2721ms (Views: 2641.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/tool/1" for 172.18.0.1 at 2020-01-13 06:57:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ToolController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  `words`.* FROM `words` WHERE `words`.`id` = 1 ORDER BY `words`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/tool_controller.rb:20
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT `words`.`concreteMethod`, `words`.`id` FROM `words` WHERE `words`.`manualKind` = '取得する1'[0m
+  ↳ app/controllers/tool_controller.rb:21
+Completed 200 OK in 24ms (Views: 6.1ms | ActiveRecord: 2.0ms)
+
+
