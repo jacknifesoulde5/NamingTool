@@ -41,7 +41,7 @@ document.addEventListener("turbolinks:load", function() {
     //変換結果出力
     var inputResultConv = function(results) {
       $.each(results, function() {
-        $('#inputMethodName').text(this.english_word);
+        $('#inputMethodName').text(this.conv_word);
       });
     };
 

@@ -10,7 +10,22 @@ class ToolController < ApplicationController
     #TODO:このように書くかは別途検討
     @words = Word.all
     @word = Word.new(conv_params)
-    render json: Word.where(conv_params).select(:english_word)
+
+    #いずれはモデルに移した方が良いんだろうな。
+    #変換後文字列生成
+    concrete_conv_word = ""
+    japanese_conv_word = ""
+    if Word.where(id: conv_params[:concreteMethod]).present?
+      concrete_conv_word = Word.where(id: conv_params[:concreteMethod]).first["english_word"]
+    end
+    if Word.where(japanese_word: conv_params[:japanese_word]).present?
+      japanese_conv_word = Word.where(japanese_word: conv_params[:japanese_word]).first["english_word"]
+    end
+    conv_word = <<~CONV_WORD
+                #{concrete_conv_word}_#{japanese_conv_word}
+                CONV_WORD
+
+    render json: [{"conv_word": conv_word.downcase}]
   end
 
   #TODO: 本当にこのメソッド名で良いのか。
@@ -22,6 +37,6 @@ class ToolController < ApplicationController
   private
 
   def conv_params
-    params.require(:word).permit(:japanese_word)
+    params.require(:word).permit(:manualKind,:concreteMethod,:japanese_word)
   end
 end
