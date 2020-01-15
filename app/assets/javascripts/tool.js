@@ -41,7 +41,13 @@ document.addEventListener("turbolinks:load", function() {
     //変換結果出力
     var inputResultConv = function(results) {
       $.each(results, function() {
-        $('#inputMethodName').text(this.conv_word);
+        if (results[0]["conv_word"]){
+          $('#inputMethodName').text(this.conv_word);
+        } else {
+          $('#inputClassName').val(this.conv_other_camel);
+          $('#inputVariable').val(this.conv_other_downcase);
+          $('#inputFix').val(this.conv_other_upcase);
+        }
       });
     };
 

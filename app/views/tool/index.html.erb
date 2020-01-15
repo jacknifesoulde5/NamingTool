@@ -49,20 +49,20 @@
   <div class="row m-1">
     <div class="col-6 border-right">
       <div class="bg-light border border-gray py-2 px-4 m-2">
-        <form>
+        <%= form_with( url: tool_other_path,local: true) do |f| %>
             <div class="form-group">
-              <label for="inputWord1">単語1</label>
-              <input type="text" class="form-control form-control-sm" id="inputWord1">
+              <%= f.label :word1,"単語1"%>
+              <%= f.text_field :word1, class: 'form-control form-control-sm change_field' %>
             </div>
             <div class="form-group">
-              <label for="inputWord2">単語2</label>
-              <input type="text" class="form-control form-control-sm" id="inputWord2">
+              <%= f.label :word2,"単語2"%>
+              <%= f.text_field :word2, class: 'form-control form-control-sm change_field' %>
             </div>
             <div class="form-group">
-              <label for="inputWord3">単語3</label>
-              <input type="text" class="form-control form-control-sm" id="inputWord3">
+              <%= f.label :word3,"単語3"%>
+              <%= f.text_field :word3, class: 'form-control form-control-sm change_field' %>
             </div>
-        </form>
+        <% end %>
       </div>
     </div>
     <div class="col-6">

@@ -28,6 +28,34 @@ class ToolController < ApplicationController
     render json: [{"conv_word": conv_word.downcase}]
   end
 
+  def conv_other
+    #@word = Word.new(conv_params)
+
+    #TODO:Strong Parameter的なことはしなくても良いのだろうか。
+    #いずれはモデルに移した方が良いんだろうな。
+    #変換後文字列生成
+    conv_word1 = ""
+    conv_word2 = ""
+    conv_word3 = ""
+    #binding.pry
+    if Word.where(japanese_word: params[:word1]).present?
+      conv_word1 = Word.where(japanese_word: params[:word1]).first["english_word"]
+    end
+    if Word.where(japanese_word: params[:word2]).present?
+      conv_word2 = Word.where(japanese_word: params[:word2]).first["english_word"]
+    end
+    if Word.where(japanese_word: params[:word3]).present?
+      conv_word3 = Word.where(japanese_word: params[:word3]).first["english_word"]
+    end
+    conv_other = <<~CONV_WORD
+                 #{conv_word1}_#{conv_word2}_#{conv_word3}
+                 CONV_WORD
+
+    render json: [{"conv_other_camel": conv_other.camelize,
+                   "conv_other_downcase": conv_other.downcase,
+                   "conv_other_upcase": conv_other.upcase}]
+  end
+
   #TODO: 本当にこのメソッド名で良いのか。
   def show
     manualKind = Word.where(id: params[:id]).first["manualKind"]
