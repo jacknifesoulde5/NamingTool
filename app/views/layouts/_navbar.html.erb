@@ -16,10 +16,10 @@
   <div class="collapse navbar-collapse" id="navbarToogleContent">
     <!-- ナビゲーションバー左 -->
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if request.path == '/tool' %> ">
         <a href="/tool" class="nav-link">変換</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item <%= 'active' if request.path == '/words' %> ">
         <a href="/words" class="nav-link">単語一覧</a>
       </li>
     </ul>
