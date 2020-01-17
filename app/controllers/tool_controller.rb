@@ -11,6 +11,8 @@ class ToolController < ApplicationController
     @words = Word.all
     @word = Word.new(conv_params)
 
+    binding.pry
+
     #いずれはモデルに移した方が良いんだろうな。
     #変換後文字列生成
     conv_array =[]
