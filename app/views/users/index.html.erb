@@ -1,0 +1,39 @@
+<!-- ナビゲーションバー -->
+<%= render 'layouts/navbar' %>
+
+<!-- コンテンツ -->
+<div class="container mt-3">
+  <!-- 新規作成リンク -->
+  <a href="/users/sign_up" class="btn btn-outline-dark mb-2 float-right">新規作成</a>
+  <!-- 一覧 -->
+  <table class="table table-hover">
+    <thead class="bg-dark text-white">
+      <th scope="col">ユーザー名</th>
+      <th scope="col">管理者</th>
+      <th style="width:100px" scope="col"></th>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.email %></td>
+          <td>
+            <% if user.roll == 2 %>
+              <i class="fas fa-check"></i>
+            <% end %>
+          </td>
+          <td><%= link_to '削除', 
+                  destroy_user_session_path,
+                  class: 'btn btn-outline-danger mb-2 delete',
+                  method: :delete,
+                  remote: true,
+                  data: { confirm: "ユーザーを削除します。よろしいでしょうか？"}
+              %>
+          </td>
+        </tr>      
+      <% end %>
+    </tbody>
+  </table>
+
+  <!-- ページネーション -->
+  <%= paginate @users %>
+</div>

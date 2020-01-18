@@ -5,12 +5,12 @@
 <div class="container mt-3">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "col-md-6 offset-md-3" }) do |f| %>
     <div class="field">
-      <%= f.label :email %><br />
+      <%= f.label :email,"Eメールアドレス" %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email",class: "form-control form-control-sm" %>
     </div>
 
     <div class="field">
-      <%= f.label :パスワード %><br />
+      <%= f.label :password,"パスワード" %><br />
       <%= f.password_field :password, autocomplete: "current-password",class: "form-control form-control-sm" %>
     </div>
 
