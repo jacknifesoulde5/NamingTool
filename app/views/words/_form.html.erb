@@ -1,3 +1,5 @@
+  <%= render 'shared/error_messages' %>
+
   <%= form_with( model: word,local: true) do |f| %>
     <div class="form-group">
       <%= f.label :manualKind, '操作の種類' %>

@@ -4,6 +4,10 @@
 <!-- コンテンツ -->
 <div class="container mt-3">
 
+  <% if flash[:notice] %>
+    <div class="alert alert-primary"><%= flash[:notice] %></div>
+  <% end %>
+
   <div class="border rounded-lg mb-4">
     <div class="bg-dark text-white p-2">検索条件</div>
 
