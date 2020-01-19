@@ -17,7 +17,7 @@ if Rails.env = "development"
   #             )
   # end
 
-  (1..5).each do |i|
+  (6..25).each do |i|
     Word.create(manualKind: "取得する#{i}",
                 concreteMethod: "DB#{i}",
                 japanese_word: "日本語名#{i}",

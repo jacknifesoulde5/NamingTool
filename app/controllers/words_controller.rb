@@ -7,6 +7,7 @@ class WordsController < ApplicationController
   end
 
   def edit
+    @word.attributes = flash[:word] if flash[:word]
   end
 
   def update
@@ -21,7 +22,7 @@ class WordsController < ApplicationController
   end  
 
   def new
-    @word = Word.new
+    @word = Word.new(flash[:word])
   end
 
   def create
