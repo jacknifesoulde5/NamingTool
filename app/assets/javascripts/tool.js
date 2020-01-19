@@ -26,6 +26,7 @@ document.addEventListener("turbolinks:load", function() {
         $.ajax({
           url: childrenPath,
           dataType: "json",
+          type: "GET",
           success: function(results) {
             //サーバーから受け取った子カテゴリの一覧でセレクトボックスを置き換える。
             replaceSelectOptions($selectChildren, results);

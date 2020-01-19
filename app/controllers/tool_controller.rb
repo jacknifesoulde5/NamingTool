@@ -4,49 +4,29 @@ class ToolController < ApplicationController
     @word = Word.new
   end
 
-  #TODO: これって変換処理なのにRESTを守ってcreateに作るのか。
-  #      CRUDとは違うような気がするが。
-  def create
-    #TODO:このように書くかは別途検討
-    @words = Word.all
-    @word = Word.new(conv_params)
-
-    #いずれはモデルに移した方が良いんだろうな。
+  def conv_method
     #変換後文字列生成
-    conv_array =[]
-    if Word.where(id: conv_params[:concreteMethod]).present?
-      conv_array.push(Word.where(id: conv_params[:concreteMethod]).first["english_word"])
-    end
-    if Word.where(japanese_word: conv_params[:japanese_word]).present?
-      conv_array.push(Word.where(japanese_word: conv_params[:japanese_word]).first["english_word"])
-    end
+    conv_word = Word.new.create_conv_word(
+                [{id: conv_params[:concreteMethod]},
+                 {japanese_word: conv_params[:japanese_word]}])
 
-    render json: [{"conv_word": conv_array.join('_').downcase}]
+    render json: [{"conv_word": conv_word}]
   end
 
   def conv_other
     #TODO:Strong Parameter的なことはしなくても良いのだろうか。
-    #いずれはモデルに移した方が良いんだろうな。
     #変換後文字列生成
-    conv_array =[]
-    if Word.where(japanese_word: params[:word1]).present?
-      conv_array.push(Word.where(japanese_word: params[:word1]).first["english_word"].downcase)
-    end
-    if Word.where(japanese_word: params[:word2]).present?
-      conv_array.push(Word.where(japanese_word: params[:word2]).first["english_word"].downcase)
-    end
-    if Word.where(japanese_word: params[:word3]).present?
-      conv_array.push(Word.where(japanese_word: params[:word3]).first["english_word"].downcase)
-    end
-    #スネークケースに変換
-    conv_other = conv_array.join('_')
-    render json: [{"conv_other_camel": conv_other.camelize,
-                   "conv_other_downcase": conv_other,
-                   "conv_other_upcase": conv_other.upcase}]
+    conv_word = Word.new.create_conv_word(
+               [{japanese_word: params[:word1]},
+               {japanese_word: params[:word2]},
+               {japanese_word: params[:word3]}])
+
+    render json: [{"conv_other_camel": conv_word.camelize,
+                   "conv_other_downcase": conv_word,
+                   "conv_other_upcase": conv_word.upcase}]
   end
 
-  #TODO: 本当にこのメソッド名で良いのか。
-  def show
+  def get_concrete
     manualKind = Word.where(id: params[:id]).first["manualKind"]
     render json: Word.where(manualKind: manualKind).select(:concreteMethod,:id)
   end
