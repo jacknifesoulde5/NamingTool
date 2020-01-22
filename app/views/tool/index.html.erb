@@ -17,7 +17,6 @@
             </div>
             <div class="form-group">
               <%= f.label :concreteMethod,"具体的な操作方法"%>
-              <!-- TODO:セレクトボックス空白のもっと良い書き方がありそう -->
               <%= f.select :concreteMethod,[""],
                 { include_blank: true },
                 class: 'form-control form-control-sm select-children change_field' %>

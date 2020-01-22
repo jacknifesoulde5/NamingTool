@@ -14,7 +14,6 @@ class ToolController < ApplicationController
   end
 
   def conv_other
-    #TODO:Strong Parameter的なことはしなくても良いのだろうか。
     #変換後文字列生成
     conv_word = Word.new.create_conv_word(
                [{japanese_word: params[:word1]},
