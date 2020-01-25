@@ -1,6 +1,6 @@
 class ToolController < ApplicationController
   def index
-    @words = Word.all.to_a.uniq {|word| word.manualKind}
+    @words = Word.all.where.not(manualKind:'').to_a.uniq {|word| word.manualKind}
     @word = Word.new
   end
 
