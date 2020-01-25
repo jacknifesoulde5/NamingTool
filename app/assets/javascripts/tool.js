@@ -3,7 +3,7 @@ document.addEventListener("turbolinks:load", function() {
     var replaceSelectOptions = function($select, results) {
       $select.html($('<option>'));
       $.each(results, function() {
-        var option = $('<option>').val(this.id).text(this.concreteMethod);
+        var option = $('<option>').val(this.concreteMethod).text(this.concreteMethod);
         $select.append(option);
       });
     };

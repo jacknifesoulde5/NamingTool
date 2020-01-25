@@ -11,7 +11,7 @@
             <div class="form-group">
               <%= f.label :manualKind,"操作の種類"%><span class="text-muted">(例：取得する、送る)</span>
               <%= f.select :manualKind,
-                @words.map { |word| [word.manualKind,word.id,data: { children_path: get_concrete_path(word) }]} ,
+                @words.map { |word| [word.manualKind,word.manualKind,data: { children_path: get_concrete_path(word) }]} ,
                 { include_blank: true },
                 class: 'form-control form-control-sm select-parent' %>
             </div>
