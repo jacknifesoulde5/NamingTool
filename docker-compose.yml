@@ -12,9 +12,10 @@ services:
     tty: true
     stdin_open: true
   db:
-    container_name: db
-    image: postgres:11.5-alpine
+    image: mysql:5.7
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - db-volume:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: bltblb
 volumes:
   db-volume:
