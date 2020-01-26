@@ -64,13 +64,17 @@
                   edit_word_path(word),
                   class: 'btn btn-outline-dark mb-2'
               %></td>
-          <td><%= link_to '削除', 
-                  word,
-                  class: 'btn btn-outline-danger mb-2 delete',
-                  method: :delete,
-                  remote: true,
-                  data: { confirm: "単語を削除します。よろしいでしょうか？"}
-              %></td>
+          <td>
+            <% if current_user.present? && current_user.roll == 2 %>
+              <%= link_to '削除', 
+                    word,
+                    class: 'btn btn-outline-danger mb-2 delete',
+                    method: :delete,
+                    remote: true,
+                    data: { confirm: "単語を削除します。よろしいでしょうか？"}
+              %>
+            <% end %>
+          </td>
         </tr>      
       <% end %>
     </tbody>
